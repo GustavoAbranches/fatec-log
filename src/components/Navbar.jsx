@@ -31,7 +31,7 @@ export default function Navbar() {
     setOpenDropdown(openDropdown === index ? null : index);
   };
   return (
-    <nav className=" flex flex-row w-full h-28 justify-end items-center pr-20 bg-slate-800">
+    <nav className=" flex flex-row w-full h-28 justify-end items-center pr-20 bg-white">
       <div>
         <div className="flex space-x-4 ">
           {btnsDrop.map((btn) => (

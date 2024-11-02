@@ -1,54 +1,44 @@
-import instagram from "../assets/instagram.svg";
-import linkedin from "../assets/linkedin.svg";
-import facebook from "../assets/facebook.svg";
-import youtube from "../assets/youtube.svg";
+import { Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 
 export default function Header() {
-
     const btns = [
         {
             id: 1,
-            img: instagram,
+            Icon: Instagram,
             link: "https://www.instagram.com/",
             alt: "Link Instagram",
         },
-
         {
             id: 2,
-            img: linkedin,
+            Icon: Linkedin,
             link: "https://www.linkedin.com",
             alt: "Link Linkedin",
         },
-
         {
             id: 3,
-            img: facebook,
+            Icon: Facebook,
             link: "https://www.facebook.com/",
-            alt: "Link Instagram",
+            alt: "Link Facebook",
         },
-
         {
             id: 4,
-            img: youtube,
+            Icon: Youtube,
             link: "https://www.youtube.com/",
             alt: "Link Youtube",
         }
     ];
 
-    const btnStyle = "w-6 h-6 flex justify-center items-center bg-red-600 rounded-full m-1";
-    const imgStyle = "w-4 h-4";
+    const btnStyle = "w-8 h-8 flex justify-center items-center bg-red-600 rounded-full m-1 text-white";
 
-    return(
+    return (
         <div className="w-auto h-10 flex justify-end bg-slate-400">
             <div className="flex flex-row items-center mr-8">
                 {btns.map((btn) => (
-                    <div key={btn.id} className={btnStyle}>
-                        <a href={btn.link} >
-                            <img src={btn.img} alt={btn.alt} className={imgStyle} />
-                        </a>
-                    </div>
+                    <a key={btn.id} href={btn.link} target="_blank" rel="noopener noreferrer" aria-label={btn.alt} className={btnStyle}>
+                        <btn.Icon className="w-4 h-4" />
+                    </a>
                 ))}
             </div>
         </div>
-    )
+    );
 }
