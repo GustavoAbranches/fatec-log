@@ -10,41 +10,51 @@ function Sobre() {
       <Header />
       <Navbar />
       <div className="w-full max-w-6xl mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-8">Sobre a Fatec Carapicuíba</h1>
-      
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="md:w-1/2 space-y-6">
-          <p className="text-justify">
-            A Fatec Carapicuíba iniciou as atividades no 1º semestre de 2006 e hoje oferece um total de 7 cursos (6 presenciais e 1 na modalidade EAD). a unidade está localizada na Avenida Francisco Pignatari, 650, Vila Gustavo Correia, no município de Carapicuíba.
-          </p>
-          
-          <p className="text-justify">
-            Atualmente, a Fatec Carapicuíba conta com aproximadamente xxx alunos matriculados e já formou mais de xxx profissionais. A faculdade tem como missão &quot;formar o profissional Tecnólogo com base na competência profissional adequada às necessidades do setor produtivo mediante o desenvolvimento de habilidades que contribuam: para a elevação da qualidade e da produtividade dos processos, produtos e serviços; para a melhoria do padrão de vida do aluno e para o desenvolvimento social.&quot;
-          </p>
-        </div>
-        
-        <div className="md:w-1/2 pl-20">
-          <h2 className="font-semibold mb-4">Nossos cursos</h2>
-          <ul className="list-disc pl-5 space-y-1 mb-6">
-            <li>Análise e desenvolvimento de sistemas</li>
-            <li>AMS - ADS</li>
-            <li>Design de mídias digitais</li>
-            <li>Jogos digitais</li>
-            <li>Logística</li>
-            <li>Secretariado</li>
-            <li>Gestão empresarial (EAD)</li>
-          </ul>
-          
-          <p className="mb-2">Para mais informações, nosso site:</p>
-          <a 
-            href="https://fateccarapicuiba.edu.br" 
-            className="text-blue-600 hover:underline"
-          >
-            fateccarapicuiba.edu.br
-          </a>
+        <h1 className="text-3xl font-bold mb-8">Sobre a Fatec Carapicuíba</h1>
+
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="md:w-1/2 space-y-6">
+            <p className="text-justify">
+              A Fatec Carapicuíba iniciou as atividades no 1º semestre de 2006 e
+              hoje oferece um total de 7 cursos (6 presenciais e 1 na modalidade
+              EAD). a unidade está localizada na Avenida Francisco Pignatari,
+              650, Vila Gustavo Correia, no município de Carapicuíba.
+            </p>
+
+            <p className="text-justify">
+              Atualmente, a Fatec Carapicuíba conta com aproximadamente xxx
+              alunos matriculados e já formou mais de xxx profissionais. A
+              faculdade tem como missão &quot;formar o profissional Tecnólogo
+              com base na competência profissional adequada às necessidades do
+              setor produtivo mediante o desenvolvimento de habilidades que
+              contribuam: para a elevação da qualidade e da produtividade dos
+              processos, produtos e serviços; para a melhoria do padrão de vida
+              do aluno e para o desenvolvimento social.&quot;
+            </p>
+          </div>
+
+          <div className="md:w-1/2 pl-20">
+            <h2 className="font-semibold mb-4">Nossos cursos</h2>
+            <ul className="list-disc pl-5 space-y-1 mb-6">
+              <li>Análise e desenvolvimento de sistemas</li>
+              <li>AMS - ADS</li>
+              <li>Design de mídias digitais</li>
+              <li>Jogos digitais</li>
+              <li>Logística</li>
+              <li>Secretariado</li>
+              <li>Gestão empresarial (EAD)</li>
+            </ul>
+
+            <p className="mb-2">Para mais informações, nosso site:</p>
+            <a
+              href="https://fateccarapicuiba.edu.br"
+              className="text-blue-600 hover:underline"
+            >
+              fateccarapicuiba.edu.br
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
       <WorkshopDiv
         title="Identidade visual da Fatec e do Evento "
