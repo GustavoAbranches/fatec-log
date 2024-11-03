@@ -1,4 +1,4 @@
-import { textData } from "../util/procramacaotext";
+import { textData } from "../util/programacaoText";
 
 export default function GradeProgramacao() {
   return (
