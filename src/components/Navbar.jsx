@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className=" flex flex-row justify-center p-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+              className=" flex flex-row justify-center p-2 rounded-md text-white hover:text-gray-900 focus:outline-none"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -85,7 +85,7 @@ export default function Navbar() {
               <div key={btn.id} className="relative">
                 <button
                   onClick={() => toggleDropdown(btn.id)}
-                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white hover:text-gray-900 "
                 >
                   <span>{btn.title}</span>
                   <ChevronDown
