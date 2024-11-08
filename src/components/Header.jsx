@@ -31,7 +31,7 @@ export default function Header() {
     const btnStyle = "w-8 h-8 flex justify-center items-center bg-red-600 rounded-full m-1 text-white";
 
     return (
-        <div className="w-auto h-10 flex justify-end bg-slate-400">
+        <div className="w-auto h-10 flex justify-end bg-orange-400">
             <div className="flex flex-row items-center mr-8">
                 {btns.map((btn) => (
                     <a key={btn.id} href={btn.link} target="_blank" rel="noopener noreferrer" aria-label={btn.alt} className={btnStyle}>

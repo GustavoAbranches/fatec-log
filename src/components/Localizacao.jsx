@@ -1,30 +1,49 @@
 import Map from "./Map";
 
 export default function Localizacao() {
+  const styletext =
+    "text-slate-500 text-sm md:text-lg font-normal leading-relaxed";
+
   return (
-    <div className="flex flex-row w-full h-[600px] items-center justify-around p-20">
-      <div className="flex flex-col justify-evenly w-1/2 h-1/2">
-        <p className="text-red-700">LOCALIZAÇÃO</p>
-        <p className="text-4xl font-semibold">Como chegar?</p>
+    <div className="container mx-auto px-4 py-8 md:py-16 lg:py-20">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+        {/* Text Content Section */}
+        <div className="flex flex-col space-y-6 lg:w-1/2">
+          <div className="space-y-2">
+            <p className="text-red-700 text-sm md:text-lg font-medium tracking-wide">
+              LOCALIZAÇÃO
+            </p>
+            <h1 className="text-2xl md:text-4xl font-semibold text-gray-900">
+              Como chegar?
+            </h1>
+          </div>
 
-        <p className="text-black text-2xl font-semibold">Endereço</p>
-        <p className="text-slate-500 text-lg font-normal">
-          Av.Francisco Pignatari, 650 - Vila Gustavo Correia, Carapicuíba
-        </p>
+          <div className="space-y-2">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-900">
+              Endereço
+            </h2>
+            <p className={styletext}>
+              Av.Francisco Pignatari, 650 - Vila Gustavo Correia, Carapicuíba
+            </p>
+          </div>
 
-        <p className="text-black text-2xl font-semibold">Referêrencias</p>
-        <ul className="list-disc">
-          <li className="text-slate-500 text-lg font-normal">
-            10 minutos a pé da estação de Trem de Carapicuíba (Linha 8 -
-            Diamante) e do terminal de Ônibus Carapicuíba.
-          </li>
-          <li className="text-slate-500 text-lg font-normal">
-            Próxima à Rodoviaria Presidente Castelo Branco.
-          </li>
-        </ul>
+          <div className="space-y-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-900">
+              Referências
+            </h2>
+            <ul className="list-disc pl-5 space-y-3">
+              <li className={styletext}>
+                10 minutos a pé da estação de Trem de Carapicuíba (Linha 8 -
+                Diamante) e do terminal de Ônibus Carapicuíba.
+              </li>
+              <li className={styletext}>
+                Próxima à Rodoviaria Presidente Castelo Branco.
+              </li>
+            </ul>
+          </div>
+        </div>
+          <Map />
       </div>
-      <Map />
-      <div></div>
     </div>
   );
 }

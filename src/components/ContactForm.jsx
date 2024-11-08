@@ -48,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full min-h-screen bg-slate-800 text-white">
+    <div className="flex flex-col md:flex-row w-full min-h-screen bg-blue-900 text-white">
       {/* Left Column */}
       <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
         <h1 className="text-4xl font-bold mb-4">Contato</h1>

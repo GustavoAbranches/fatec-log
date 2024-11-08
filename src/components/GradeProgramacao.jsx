@@ -1,61 +1,49 @@
+import { useState } from "react";
+
 import { textData } from "../util/programacaoText";
 
 export default function GradeProgramacao() {
+  const [content, setContent] = useState([]);
+
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-row justify-center items-center gap-7">
-        <p className="text-4xl font-semibold">Grade de Programação</p>
-        {textData.map((d, index) => {
+    <div className="flex flex-col justify-center items-center w-full h-auto mt-20 ">
+      <div>
+        {textData.map((btnDay) => {
           return (
             <>
-              <div
-                key={index}
-                className="flex flex-col justify-center items-center"
+              <button
+                onClick={() => setContent(btnDay.content)}
+                className="w-16 h-16 bg-slate-500 m-3 hover:bg-slate-600 text-white"
               >
-                <p className="text-3xl font-semibold text-slate-500">DIA</p>
-                <p className="text-3xl font-semibold text-slate-500">{d.day}</p>
-              </div>
+                {btnDay.day}
+              </button>
             </>
           );
         })}
       </div>
-      <hr className="border-t-4 border-red-700 w-1/2 my-10" />
 
-      <div>
-        {textData.map((d, index) => {
-          return (
-            <div key={index} className="flex flex-col px-52 justify-center items-center">
-              <p className="text-3xl font-semibold text-slate-500 py-10">
-                DIA {d.day} {d.name}
-              </p>
-              <div>
-                {d.content.map((item, itemIndex) => {
-                  return (
-                    <>
-                      <div className="flex flex-row w-full h-full justify-center items-center" key={itemIndex}>
-                        <div className="flex flex-col w-1/5 m-5 justify-start items-start">
-                          <p className="text-4xl font-semibold text-slate-500 "> {item.block}</p>
-                          <p className="text-3xl font-medium text-slate-500 justify-center items-center"> {item.room}</p>
-                        </div>
-
-                        <div className="border-l-2 border-slate-500 h-28"> </div>
-
-                        <div className="flex flex-col w-4/5 m-5 text-left">
-                            <p className="text-4xl font-semibold">{item.title}</p>
-                            <p>{item.text}</p>
-                            
-                        </div>
-                      </div>
-                      
-                    </>
-                  );
-                })}
+      <div className="flex flex-col justify-center items-center">
+        <hr className="border-t-4 border-slate-700 w-1/2 my-5" />
+        {content.length === 0
+          ? "Clique em um botão para ver os eventos de cada dia."
+          : content.map((item, itemIndex) => (
+              <div
+                key={itemIndex}
+                className="flex flex-col items-center w-2/4 p-4 mx-60 h-auto gap-3 border-solid shadow-xl"
+              >
+                <p className="text-3xl font-semibold text-slate-500">
+                  {item.block}
+                </p>
+                <p className="text-2xl font-medium text-slate-500">
+                  {item.room}
+                </p>
+                <p className="text-2xl md:text-3xl font-semibold">{item.title}</p>
+                <div className=" flex text-justify px-5">
+                  <p>{item.text}</p>
+                </div>
               </div>
-              <hr className="border-t-4 border-red-700 w-3/4 my-10 justify-center" />
-            </div>
-            
-          );
-        })}
+            ))}
+        <hr className="border-t-4 border-slate-700 w-1/2 my-5" />
       </div>
     </div>
   );
