@@ -42,9 +42,9 @@ export default function Timer() {
     return () => clearInterval(timer);
   }, []);
 
-  const styleDiv = "flex flex-col justify-center items-center text-md font-semibold text-slate-500"
+  const styleDiv = "flex flex-col justify-center items-center text-sm md:text-md font-semibold text-slate-500"
 
-  const styleTimer = "text-4xl font-bold text-black"
+  const styleTimer = "text-2xl md:text-4xl font-bold text-black"
   return (
     <div className="flex flex-col justify-center items-center w-full h-96 bg-red-500 relative ">
       <span className="text-slate-500 text-xl font-bold">Imagem</span>
