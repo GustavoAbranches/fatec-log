@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo_horizontal.png"
+
 
 export default function Navbar() {
   const btnsDrop = [
@@ -61,8 +63,8 @@ export default function Navbar() {
       <div className="w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-28">
           
-          <div className="flex items-center">
-            {/* Logo */}
+          <div className="flex items-center w-36">
+            <Link to={"/"}><img src={logo} alt="Logo" /></Link>
           </div>
 
           {/* Mobile menu button */}
