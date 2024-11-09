@@ -49,7 +49,7 @@ export default function Timer() {
   const styleTimer = "text-2xl md:text-4xl font-bold text-black"
   return (
     <div className="flex flex-col justify-center items-center w-full h-96 bg-red-500 relative ">
-      <span className="text-slate-500 text-xl font-bold">Imagem</span>
+      <span className="text-black text-xl font-bold">Imagem</span>
       <div className="flex justify-evenly items-center shadow-xl w-11/12 h-28 bg-white mt-64 absolute -botton-8rem translate-y-2/4 rounded-2xl md:px-60">
 
       {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
