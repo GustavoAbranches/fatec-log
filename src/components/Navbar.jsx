@@ -1,51 +1,10 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo_horizontal.png"
-
+import logo from "../assets/logo_horizontal.png";
+import { linksData } from "../util/linksData";
 
 export default function Navbar() {
-  const btnsDrop = [
-    {
-      id: 1,
-      title: "Institucional",
-      links: [
-        { text: "Fatec Carapicuiba", path: "/Sobre" },
-        { text: "Como chegar", path: "" },
-        { text: "Manual de identidade individual", path: "" },
-      ],
-    },
-    {
-      id: 2,
-      title: "O evento",
-      links: [
-        { text: "Sobre o Fatec Log", path: "" },
-        { text: "Programação", path: "/Programacao" },
-        { text: "Patrocinadores e apoiadores", path: "" },
-        { text: "Mapa do evento", path: "" },
-        { text: "Edições anteriores", path: "" },
-      ],
-    },
-    {
-      id: 3,
-      title: "Inscrição",
-      links: [
-        { text: "Acesso ao sistema", path: "" },
-        { text: "Orientação para inscrição", path: "" },
-        { text: "Template de artigo", path: "" },
-        { text: "Template de apresentação", path: "" },
-        { text: "Boletim técnico", path: "" },
-      ],
-    },
-    {
-      id: 4,
-      title: "Blog",
-      links: [
-        { text: "Notícias", path: "" },
-        { text: "Vídeos tutoriais", path: "" },
-      ],
-    },
-  ];
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -62,9 +21,10 @@ export default function Navbar() {
     <nav className="relative justify-center bg-blue-900 shadow-md md:px-10">
       <div className="w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-28">
-          
           <div className="flex items-center w-24 md:w-36">
-            <Link to={"/"}><img src={logo} alt="Logo" /></Link>
+            <Link to={"/"}>
+              <img src={logo} alt="Logo" />
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -83,7 +43,7 @@ export default function Navbar() {
 
           {/* Desktop navigation */}
           <div className="hidden md:flex md:items-center md:space-x-4">
-            {btnsDrop.map((btn) => (
+            {linksData.map((btn) => (
               <div key={btn.id} className="relative">
                 <button
                   onClick={() => toggleDropdown(btn.id)}
@@ -122,7 +82,7 @@ export default function Navbar() {
 
       <div className={`${isMobileMenuOpen ? "block" : "hidden"} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
-          {btnsDrop.map((btn) => (
+          {linksData.map((btn) => (
             <div key={btn.id}>
               <button
                 onClick={() => toggleDropdown(btn.id)}
@@ -143,7 +103,7 @@ export default function Navbar() {
                       key={subItem.text}
                       to={subItem.path}
                       className="block px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100"
-                      onClick={() => setIsMobileMenuOpen(false)} 
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {subItem.text}
                     </Link>

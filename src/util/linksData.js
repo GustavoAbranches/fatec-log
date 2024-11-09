@@ -1,5 +1,6 @@
 export const linksData = [
   {
+    id: 1,
     title: "Institucional",
     links: [
       { text: "Fatec Carapicuiba", path: "/Sobre" },
@@ -9,6 +10,7 @@ export const linksData = [
   },
   
   {
+    id: 2,
     title: "O evento",
     links: [
       { text: "Sobre o Fatec Log", path: "" },
@@ -20,6 +22,7 @@ export const linksData = [
   },
   
   {
+    id: 3,
     title: "Inscrição",
     links: [
       { text: "Acesso ao sistema", path: "" },
@@ -31,6 +34,7 @@ export const linksData = [
   },
 
   {
+    id: 4,
     title: "Blog",
     links: [
       { text: "Notícias", path: "" },
@@ -38,23 +42,5 @@ export const linksData = [
     ],
   },
 
-  {
-    title: "Fale com a gente",
-    content: [
-      {
-        text: "Estamos disponíveis de segunda a sexta-feira, das 8h às 19h",
-        isInfo: true,
-      },
-      {
-        icon: "phone",
-        text: "(11) 4184-8404",
-        isInfo: true,
-      },
-      {
-        icon: "map",
-        text: "Fatec Deputado Ary Fossen - Av. União dos Ferroviários, 1760",
-        isInfo: true,
-      },
-    ],
-  },
+  
 ]
