@@ -22,10 +22,13 @@ export default function WorkshopDiv({ title, text, btn, path }) {
           {text}
         </p>
 
-        <button className="rounded-lg bg-red-600 w-[300px] h-8 text-white font-semibold flex items-center justify-center">
-          <Link to={path}>{btn}</Link>
+        <Link
+          to={path}
+          className="rounded-lg bg-red-600 w-[300px] h-8 text-white font-semibold flex items-center justify-center"
+        >
+          {btn}
           <CircleArrowRight className="w-5 h-5 ml-1 mt-1" />
-        </button>
+        </Link>
       </div>
     </div>
   );

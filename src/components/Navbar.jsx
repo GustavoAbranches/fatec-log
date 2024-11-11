@@ -47,7 +47,7 @@ export default function Navbar() {
               <div key={btn.id} className="relative">
                 <button
                   onClick={() => toggleDropdown(btn.id)}
-                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white hover:text-gray-900 "
+                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white hover:text-gray-900"
                 >
                   <span>{btn.title}</span>
                   <ChevronDown
@@ -65,7 +65,7 @@ export default function Navbar() {
                         <Link
                           key={subItem.text}
                           to={subItem.path}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
                           role="menuitem"
                         >
                           {subItem.text}

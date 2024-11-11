@@ -17,7 +17,7 @@ function Sobre() {
             <p className="text-justify">
               A Fatec Carapicuíba iniciou as atividades no 1º semestre de 2006 e
               hoje oferece um total de 7 cursos (6 presenciais e 1 na modalidade
-              EAD). a unidade está localizada na Avenida Francisco Pignatari,
+              EAD). A unidade está localizada na Avenida Francisco Pignatari,
               650, Vila Gustavo Correia, no município de Carapicuíba.
             </p>
 
@@ -33,7 +33,7 @@ function Sobre() {
             </p>
           </div>
 
-          <div className="md:w-1/2 pl-20">
+          <div className="md:w-1/2 md:pl-20">
             <h2 className="font-semibold mb-4">Nossos cursos</h2>
             <ul className="list-disc pl-5 space-y-1 mb-6">
               <li>Análise e desenvolvimento de sistemas</li>
@@ -49,6 +49,7 @@ function Sobre() {
             <a
               href="https://fateccarapicuiba.edu.br"
               className="text-blue-600 hover:underline"
+              target="_blank"
             >
               fateccarapicuiba.edu.br
             </a>

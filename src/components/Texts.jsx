@@ -9,7 +9,7 @@ export default function Texts() {
           key={index}
         >
           <div className="flex flex-col items-start justify-center mb-8 md:mb-0">
-            <div className="flex flex-col w-full h-full mb-44">
+            <div className="flex flex-col w-full h-full md:mb-44">
               <p className="mb-2 font-medium text-blue-600">{text.title}</p>
             
             <h1 className="font-bold text-2xl md:text-4xl text-gray-900 mb-8">
