@@ -3,9 +3,9 @@ export const linksData = [
     id: 1,
     title: "Institucional",
     links: [
-      { text: "Fatec Carapicuiba", path: "/Sobre" },
-      { text: "Como chegar", path: "" },
-      { text: "Hospedagem", path: "" },
+      { text: "Fatec Carapicuiba", path: "/sobre" },
+      { text: "Como chegar", path: "/comochegar" },
+      { text: "Hospedagem", path: "/hospedagem" },
       { text: "Manual de identidade individual", path: "" },
     ],
   },
@@ -14,12 +14,12 @@ export const linksData = [
     id: 2,
     title: "O evento",
     links: [
-      { text: "Sobre o Fatec Log", path: "" },
-      { text: "Programação", path: "/Programacao" },
-      { text: "Patrocinadores e apoiadores", path: "" },
+      { text: "Sobre o Fatec Log", path: "/sobrefateclog" },
+      { text: "Programação", path: "/programacao" },
+      { text: "Patrocinadores e apoiadores", path: "/patrocinadores" },
       { text: "Mapa do evento", path: "" },
-      { text: "Edições anteriores", path: "" },
-      { text: "Cadastro de parcerista", path: "" },
+      { text: "Edições anteriores", path: "/edicoesanteriores" },
+      { text: "Cadastro de parcerista", path: "/cadastroparceirista" },
     ],
   },
   
@@ -28,7 +28,7 @@ export const linksData = [
     title: "Inscrição",
     links: [
       { text: "Acesso ao sistema", path: "" },
-      { text: "Orientação para inscrição", path: "" },
+      { text: "Orientação para inscrição", path: "/orientacaoescricao" },
       { text: "Inscrições de palestras/ mesas redondas", path: "" },
      
     ],

@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative justify-center bg-blue-900 shadow-md md:px-10">
+    <nav className="relative justify-center bg-white shadow-md md:px-10">
       <div className="w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-28">
           <div className="flex items-center w-24 md:w-36">
@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className=" flex flex-row justify-center p-2 rounded-md text-white hover:text-gray-900 focus:outline-none"
+              className=" flex flex-row justify-center p-2 rounded-md text-black hover:text-gray-900 focus:outline-none"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -47,7 +47,7 @@ export default function Navbar() {
               <div key={btn.id} className="relative">
                 <button
                   onClick={() => toggleDropdown(btn.id)}
-                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white hover:text-gray-900"
+                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-black"
                 >
                   <span>{btn.title}</span>
                   <ChevronDown
