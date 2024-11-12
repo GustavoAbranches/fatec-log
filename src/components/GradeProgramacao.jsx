@@ -19,7 +19,7 @@ export default function GradeProgramacao() {
                 setContent(btnDay.content);
                 setActiveTab(btnDay.day);
               }}
-              className={`px-16 py-3 font-bold text-2xl transition-colors cursor-pointer border-b-2 border-slate-400 ${
+              className={`px-16 py-3 font-bold text-2xl transition-colors cursor-pointer ${
                 activeTab === btnDay.day
                   ? "text-red-600 border-b-2 border-red-600"
                   : "text-gray-500 hover:text-gray-700"
@@ -32,7 +32,6 @@ export default function GradeProgramacao() {
       </div>
 
       <div className="flex flex-col justify-start items-start px-16">
-        {/* <hr className="border-t-4 border-slate-400 w-full" /> */}
         {content.length === 0 ? (
           <p className="text-lg text-slate-600">{text}</p>
         ) : (
