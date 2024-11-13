@@ -1,4 +1,4 @@
-import { textsHome } from "../util/texts";
+import { textsHome } from "../../util/texts";
 
 export default function Texts() {
   return (

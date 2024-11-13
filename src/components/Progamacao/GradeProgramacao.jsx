@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import { textData } from "../util/programacaoText";
+import { textData } from "../../util/programacaoText";
 
 export default function GradeProgramacao() {
-  const [content, setContent] = useState(textData[0]?.content ||[]);
+  const [content, setContent] = useState(textData[0]?.content || []);
   const [activeTab, setActiveTab] = useState("25 DE JUNHO");
 
   const text = "Clique em um botão para ver os eventos de cada dia.";
@@ -47,14 +47,25 @@ export default function GradeProgramacao() {
                     ? `${item.block} - ${item.room}`
                     : item.block}
                 </p>
-                <p className="text-xl">{item.type}</p>
+                <p className={`text-xl ${
+                  item.type === "Palestra" ? "text-red-600" : 
+                  item.type === "Workshop" ? "text-orange-600" : 
+                  item.type === "Premiação" ? "text-amber-500" : ""
+                }`}>
+                  {item.type}
+                </p>
               </div>
               <div className="w-1 h-32 bg-black"></div>
               <div className="flex flex-col text-justify px-5">
-                <p className="text-2xl md:text-3xl font-semibold mb-4">
+                <p className="text-2xl md:text-3xl font-semibold mb-2 text-slate-800">
                   {item.title}
                 </p>
-                <p>{item.text}</p>
+                <p className="text-lg font-semibold mb-2 text-slate-800">
+                  {item.speaker}
+                </p>
+                <p className="text-slate-800">
+                  {item.text}
+                </p>
               </div>
             </div>
           ))

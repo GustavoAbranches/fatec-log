@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import GradeProgramacao from "../components/GradeProgramacao";
+import GradeProgramacao from "../components/Progamacao/GradeProgramacao";
 
 function Programacao() {
   return (

@@ -8,14 +8,16 @@ import Sobre from './pages/Sobre.jsx'
 import Programacao from './pages/Programacao.jsx'
 import ComoChegar from './pages/ComoChegar.jsx'
 import Hospedagem from './pages/Hospedagem.jsx'
-
-
-import './index.css'
 import SobreFatecLog from './pages/SobreFatecLog.jsx'
 import EdicoesAnteriores from './pages/EdicoesAnteriores.jsx'
 import CadastroParceirista from './pages/CadastroParceirista.jsx'
 import Patrocinadores from './pages/Patrocinadores.jsx'
+import InscricaoPalestra from './pages/InscricaoPalestra.jsx'
+import OrientacaoCriacaoArtigo from './pages/OrientacaoCriacaoArtigo.jsx'
+import OrientacaoEscricao from './pages/OrientacaoEscricao.jsx'
+import OrientacaoSubmissão from './pages/OrientacaoSubmissao.jsx'
 
+import './index.css'
 
 const router = createBrowserRouter([
   {
@@ -56,9 +58,20 @@ const router = createBrowserRouter([
   },
   {
     path: '/orientacaoescricao',
-    element: <Patrocinadores />,
+    element: <OrientacaoEscricao />,
   },
-
+  {
+    path: '/inscricaopalestra',
+    element: <InscricaoPalestra />,
+  },
+  {
+    path: '/orientacaocriacaoartigo',
+    element: <OrientacaoCriacaoArtigo />,
+  },
+  {
+    path: '/orientacaosubmissão',
+    element: <OrientacaoSubmissão />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

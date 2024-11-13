@@ -62,6 +62,7 @@ function Sobre() {
         text="Descubra as diferentes aplicações da identidade visual do evento e como ela combina com a Fatec Carapicuíba"
         btn="Confira nossa Identidade Visual"
         path="/"
+        color="amber"
       />
 
       <div className="w-full h-[800px] p-24">
@@ -79,6 +80,7 @@ function Sobre() {
         text="Entenda como utilizamos o espaço da Fatec Carapicuíba, a formação da nossa equipe, e como organizamos o evento"
         btn="Estrutura Organizacional"
         path="/"
+        color="blue"
       />
       <ReturnButton />
 

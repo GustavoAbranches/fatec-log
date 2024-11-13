@@ -29,7 +29,7 @@ export const linksData = [
     links: [
       { text: "Acesso ao sistema", path: "" },
       { text: "Orientação para inscrição", path: "/orientacaoescricao" },
-      { text: "Inscrições de palestras/ mesas redondas", path: "" },
+      { text: "Inscrições de palestras/ mesas redondas", path: "/inscricaopalestra" },
      
     ],
   },
@@ -38,8 +38,8 @@ export const linksData = [
     id: 4,
     title: "Artigos Científicos",
     links: [
-      { text: "Orientações para criação de artigo", path: "" },
-      { text: "Orientações para submisão de artigo", path: "" },
+      { text: "Orientações para criação de artigo", path: "/orientacaocriacaoartigo" },
+      { text: "Orientações para submisão de artigo", path: "/orientacaosubmissão" },
       { text: "Template de artigo", path: "" },
       { text: "Template de apresentação", path: "" },
       { text: "Boletim técnico", path: "" },

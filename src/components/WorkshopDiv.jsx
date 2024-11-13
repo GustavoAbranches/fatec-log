@@ -2,9 +2,14 @@ import { CircleArrowRight } from "lucide-react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default function WorkshopDiv({ title, text, btn, path }) {
+const colorClasses = {
+  amber: "bg-yellow-500",
+  blue: "bg-blue-900",
+};
+export default function WorkshopDiv({ title, text, btn, path, color }) {
+  const bgColorClass = colorClasses[color] || "";
   return (
-    <div className="relative bg-blue-900 min-h-[500px] p-32 flex items-center justify-evenly ">
+    <div className={`relative ${bgColorClass} min-h-[500px] p-32 flex items-center justify-evenly`}>
       {/* Pontos decorativos */}
       <div className="hidden left-8 lg:left-44 top-1/4 absolute md:grid grid-cols-5 gap-[22px]">
         {[...Array(50)].map((_, i) => (
@@ -39,4 +44,5 @@ WorkshopDiv.propTypes = {
   text: PropTypes.string.isRequired,
   btn: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
