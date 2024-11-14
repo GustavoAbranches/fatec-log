@@ -6,7 +6,7 @@ export default function Breadcrumb() {
 
   return (
     <nav className="flex items-center space-x-1 text-sm md:text-base text-gray-600 py-4 px-4 md:px-0">
-      <Link to="/" className="hover:text-gray-900 transition-colors duration-200">
+      <Link to="/" className="hover:text-gray-900 transition-colors duration-200 pl-10">
         Home
       </Link>
       {pathnames.map((value, index) => {
