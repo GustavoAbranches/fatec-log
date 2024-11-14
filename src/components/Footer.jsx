@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="bg-white text-black">
       <Supporters />
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container px-4 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
           {linksData.map((section) => (
-            <div key={section.title} className="flex flex-col w-52 h-60">
+            <div key={section.title} className="flex flex-col ">
               <h2 className="text-xl font-bold mb-4">{section.title}</h2>
 
               {section.links && (
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gray-700">
+      <div className="border-t border-gray-700 mt-4">
         <div className="container mx-auto px-4 py-6">
           <p className="text-center text-gray-800">
             © {new Date().getFullYear()} Fatec Log. Todos os direitos

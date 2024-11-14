@@ -3,12 +3,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WorkshopDiv from "../components/WorkshopDiv";
 import ReturnButton from "../components/ReturnButton";
+import Breadcrumb from "../components/Breadcrumb.jsx"
+
 
 function Sobre() {
   return (
     <>
       <Header />
       <Navbar />
+      <Breadcrumb />
       <div className="w-full max-w-6xl mx-auto p-8">
         <h1 className="text-3xl font-bold mb-8">Sobre a Fatec Carapicuíba</h1>
 
