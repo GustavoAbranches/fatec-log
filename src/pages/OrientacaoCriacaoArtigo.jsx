@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
+import img from "../assets/orientaA_op1.png"
 
 import textStyle from "../util/textStyle.js";
 
@@ -60,6 +61,7 @@ function OrientacaoCriacaoArtigo() {
         btn="Template de Artigo"
         path=""
         color="amber"
+        img={img}
       />
 
       <Footer />

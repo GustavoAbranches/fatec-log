@@ -7,7 +7,6 @@ export default function Localizacao() {
   return (
     <div className="container mx-auto px-4 py-8 md:py-16 lg:py-20">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-        {/* Text Content Section */}
         <div className="flex flex-col space-y-6 lg:w-1/2">
           <div className="space-y-2">
             <p className="text-red-700 text-sm md:text-lg font-medium tracking-wide">

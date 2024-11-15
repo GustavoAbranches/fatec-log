@@ -6,6 +6,7 @@ import WorkshopDiv from "../components/WorkshopDiv";
 import Localizacao from "../components/Localizacao";
 import ContactForm from "../components/Home/ContactForm";
 import Footer from "../components/Footer";
+import img from "../assets/reuniao_op1.png"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         btn="Confira a Progamação"
         path="/Programacao"
         color="blue"
+        img={img}
       />
       <Localizacao />
       <ContactForm />

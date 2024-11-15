@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import WorkshopDiv from "../components/WorkshopDiv";
 import ReturnButton from "../components/ReturnButton";
 import Breadcrumb from "../components/Breadcrumb.jsx"
+import logImg from "../assets/log_op1.png"
+import brandImg from "../assets/brand_op1.png"
 
 
 function Sobre() {
@@ -66,6 +68,9 @@ function Sobre() {
         btn="Confira nossa Identidade Visual"
         path="/"
         color="amber"
+        img={brandImg
+          
+        }
       />
 
       <div className="w-full h-[800px] p-24">
@@ -84,6 +89,7 @@ function Sobre() {
         btn="Estrutura Organizacional"
         path="/"
         color="blue"
+        img={logImg}
       />
       <ReturnButton />
 

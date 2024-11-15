@@ -6,20 +6,19 @@ const colorClasses = {
   amber: "bg-yellow-500",
   blue: "bg-blue-900",
 };
-export default function WorkshopDiv({ title, text, btn, path, color }) {
+
+export default function WorkshopDiv({ title, text, btn, path, color, img }) {
   const bgColorClass = colorClasses[color] || "";
   return (
-    <div className={`relative ${bgColorClass} min-h-[500px] p-32 flex items-center justify-evenly`}>
-      {/* Pontos decorativos */}
-      <div className="hidden left-8 lg:left-44 top-1/4 absolute md:grid grid-cols-5 gap-[22px]">
-        {[...Array(50)].map((_, i) => (
-          <div key={i} className="w-2 h-2 bg-white rounded-full"></div>
-        ))}
+    <div
+      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-10  items-center justify-around`}
+    >
+      <img
+        src={img}
+        className="w-full md:w-1/2 lg:w-[500px] h-auto md:left-12"
+      />
 
-        <div className="absolute left-12 translate-y-10 w-[350px] h-[300px] bg-orange-400"></div>
-      </div>
-
-      <div className="relative z-10 flex flex-col max-w-xl mx-auto md:ml-auto md:mr-8 lg:ml-[600px] lg:mr-0">
+      <div className="flex flex-col md:w-1/2">
         <p className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           {title}
         </p>
@@ -29,7 +28,7 @@ export default function WorkshopDiv({ title, text, btn, path, color }) {
 
         <Link
           to={path}
-          className=" bg-red-600 w-[300px] h-8 text-white font-semibold flex items-center justify-center"
+          className="bg-red-600 w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
         >
           {btn}
           <CircleArrowRight className="w-5 h-5 ml-1 mt-1" />
@@ -45,4 +44,5 @@ WorkshopDiv.propTypes = {
   btn: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
 };
