@@ -101,7 +101,9 @@ function ComoChegar() {
           transporte, posso fornecer mais informações
         </p>
       </div>
-      <Localizacao />
+      <Localizacao 
+        btn= ""
+      />
       <Footer />
     </>
   );

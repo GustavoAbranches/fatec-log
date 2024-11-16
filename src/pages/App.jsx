@@ -21,11 +21,13 @@ function App() {
         text=" Uma oportunidade de aprender, trocar experiências e conhecer as
             inovações que estão moldando o futuro da logística"
         btn="Confira a Progamação"
-        path="/Programacao"
+        path="/programacao"
         color="blue"
         img={img}
       />
-      <Localizacao />
+      <Localizacao
+        btnLoc= "ativo"
+      />
       <ContactForm />
       <Footer />
     </>

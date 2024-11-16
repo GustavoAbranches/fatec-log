@@ -1,4 +1,4 @@
-import { CircleArrowRight } from "lucide-react";
+import { CircleArrowRight, ArrowDownToLine } from "lucide-react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -7,18 +7,26 @@ const colorClasses = {
   blue: "bg-blue-900",
 };
 
-export default function WorkshopDiv({ title, text, btn, path, color, img }) {
+export default function WorkshopDiv({
+  title,
+  text,
+  btn,
+  path,
+  color,
+  img,
+  icon,
+}) {
   const bgColorClass = colorClasses[color] || "";
   return (
     <div
-      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-10  items-center justify-around`}
+      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-24 items-center justify-around`}
     >
       <img
         src={img}
         className="w-full md:w-1/2 lg:w-[500px] h-auto md:left-12"
       />
 
-      <div className="flex flex-col md:w-1/2">
+      <div className="flex flex-col md:pl-10 md:w-1/2">
         <p className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           {title}
         </p>
@@ -31,7 +39,12 @@ export default function WorkshopDiv({ title, text, btn, path, color, img }) {
           className="bg-red-600 w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
         >
           {btn}
-          <CircleArrowRight className="w-5 h-5 ml-1 mt-1" />
+
+          {icon === "download" ? (
+            <ArrowDownToLine className="w-5 h-5 ml-1 mt-1" />
+          ) : (
+            <CircleArrowRight className="w-5 h-5 ml-1 mt-1" />
+          )}
         </Link>
       </div>
     </div>
@@ -45,4 +58,5 @@ WorkshopDiv.propTypes = {
   path: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
