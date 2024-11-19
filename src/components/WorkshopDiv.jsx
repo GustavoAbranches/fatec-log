@@ -1,6 +1,7 @@
 import { CircleArrowRight, ArrowDownToLine } from "lucide-react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./Main/ScrollToTop";
 
 const colorClasses = {
   amber: "bg-yellow-500",
@@ -38,6 +39,7 @@ export default function WorkshopDiv({
           to={path}
           className="bg-red-600 w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
         >
+          <ScrollToTop />
           {btn}
 
           {icon === "download" ? (

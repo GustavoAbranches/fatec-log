@@ -1,81 +1,84 @@
-import { StrictMode } from 'react'
+import { StrictMode } from "react";
+import ScrollToTop from "./components/Main/ScrollToTop.jsx";
 
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from './pages/App.jsx'
-import Sobre from './pages/Sobre.jsx'
-import Programacao from './pages/Programacao.jsx'
-import ComoChegar from './pages/ComoChegar.jsx'
-import Hospedagem from './pages/Hospedagem.jsx'
-import SobreFatecLog from './pages/SobreFatecLog.jsx'
-import EdicoesAnteriores from './pages/EdicoesAnteriores.jsx'
-import CadastroParceirista from './pages/CadastroParceirista.jsx'
-import Patrocinadores from './pages/Patrocinadores.jsx'
-import InscricaoPalestra from './pages/InscricaoPalestra.jsx'
-import OrientacaoCriacaoArtigo from './pages/OrientacaoCriacaoArtigo.jsx'
-import OrientacaoEscricao from './pages/OrientacaoEscricao.jsx'
-import OrientacaoSubmissão from './pages/OrientacaoSubmissao.jsx'
+import App from "./pages/App.jsx";
+import Sobre from "./pages/Sobre.jsx";
+import Programacao from "./pages/Programacao.jsx";
+import ComoChegar from "./pages/ComoChegar.jsx";
+import Hospedagem from "./pages/Hospedagem.jsx";
+import SobreFatecLog from "./pages/SobreFatecLog.jsx";
+import EdicoesAnteriores from "./pages/EdicoesAnteriores.jsx";
+import CadastroParceirista from "./pages/CadastroParceirista.jsx";
+import Patrocinadores from "./pages/Patrocinadores.jsx";
+import InscricaoPalestra from "./pages/InscricaoPalestra.jsx";
+import OrientacaoCriacaoArtigo from "./pages/OrientacaoCriacaoArtigo.jsx";
+import OrientacaoEscricao from "./pages/OrientacaoEscricao.jsx";
+import OrientacaoSubmissao from "./pages/OrientacaoSubmissao.jsx";
 
-import './index.css'
+import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App/>,
+    path: "/",
+    element: <App />,
   },
   {
-    path: '/sobre',
-    element: <Sobre/>,
+    path: "/sobre",
+    element: <Sobre />,
   },
   {
-    path: '/programacao',
+    path: "/programacao",
     element: <Programacao />,
   },
   {
-    path: '/comochegar',
+    path: "/comochegar",
     element: <ComoChegar />,
   },
   {
-    path: '/hospedagem',
+    path: "/hospedagem",
     element: <Hospedagem />,
   },
   {
-    path: '/sobrefateclog',
+    path: "/sobrefateclog",
     element: <SobreFatecLog />,
   },
   {
-    path: '/edicoesanteriores',
+    path: "/edicoesanteriores",
     element: <EdicoesAnteriores />,
   },
   {
-    path: '/cadastroparceirista',
+    path: "/cadastroparceirista",
     element: <CadastroParceirista />,
   },
   {
-    path: '/patrocinadores',
+    path: "/patrocinadores",
     element: <Patrocinadores />,
   },
   {
-    path: '/orientacaoescricao',
+    path: "/orientacaoescricao",
     element: <OrientacaoEscricao />,
   },
   {
-    path: '/inscricaopalestra',
+    path: "/inscricaopalestra",
     element: <InscricaoPalestra />,
   },
   {
-    path: '/orientacaocriacaoartigo',
+    path: "/orientacaocriacaoartigo",
     element: <OrientacaoCriacaoArtigo />,
   },
   {
-    path: '/orientacaosubmissão',
-    element: <OrientacaoSubmissão />,
+    path: "/orientacaosubmissao",
+    element: <OrientacaoSubmissao />,
   },
-])
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider  router={router} />
-  </StrictMode>,
-)
+    <RouterProvider router={router}>
+      <ScrollToTop />
+    </RouterProvider>
+  </StrictMode>
+);

@@ -39,7 +39,7 @@ export const linksData = [
     title: "Artigos Científicos",
     links: [
       { text: "Orientações para criação de artigo", path: "/orientacaocriacaoartigo" },
-      { text: "Orientações para submisão de artigo", path: "/orientacaosubmissão" },
+      { text: "Orientações para submissão de artigo", path: "/orientacaosubmissao" },
       { text: "Template de artigo", path: "" },
       { text: "Template de apresentação", path: "" },
       { text: "Boletim técnico", path: "" },
