@@ -20,7 +20,7 @@ export default function WorkshopDiv({
   const bgColorClass = colorClasses[color] || "";
   return (
     <div
-      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-24 items-center justify-around`}
+      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-12 md:px-24 items-center justify-around`}
     >
       <img
         src={img}

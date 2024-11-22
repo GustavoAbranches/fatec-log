@@ -13,9 +13,9 @@ function OrientacaoEscricao() {
       <Navbar />
       <Breadcrumb />
 
-      <div className={textStyle.divStyle}>
-        <h1 className={textStyle.h1Style}>Quem pode participar do evento?</h1>
-        <p className={textStyle.pStyle}>
+      <div className={`${textStyle.divStyle} `}>
+        <h1 className={`${textStyle.h1Style}`}>Quem pode participar do evento?</h1>
+        <p className={`${textStyle.pStyle}`}>
           O Fateclog é um evento científico aberto focado na área de logística,
           ou seja todos podem participar, desde pessoas que estão trabalhando,
           até pessoas que tem o interesse em logística e inovação, além daqueles
@@ -23,19 +23,19 @@ function OrientacaoEscricao() {
           palestrantes, e todos precisam realizar a incrição.
         </p>
 
-        <h1 className={textStyle.h1Style}>
+        <h1 className={`${textStyle.h1Style}`}>
           Como fazer as inscrições para o Evento?
         </h1>
-        <p className={textStyle.pStyle}>
+        <p className={`${textStyle.pStyle}`}>
           Todos que irão participar do evento precisam estar inscritos, para
           fazer sua inscrição siga o tutorial a baixo no nosso sistema, você
           pode encontrar a página de cadastro em: Inscrição {">"} Acesso Ao
           Sistema
         </p>
 
-        <div className="w-1/2">
-          <h1 className={textStyle.h1Style}>Inscrição de usuário</h1>
-          <h2 className={textStyle.h2Style}>
+        <div className="w-full md:w-1/2">
+          <h1 className={`${textStyle.h1Style}`}>Inscrição de usuário</h1>
+          <h2 className={`${textStyle.h2Style}`}>
             1. Assista ao vídeo atentamente:
           </h2>
           <ul className={textStyle.ulStyle}>
@@ -43,37 +43,38 @@ function OrientacaoEscricao() {
               Aprenda passo a passo como criar seu usuário
             </li>
             <li className={textStyle.pStyle}>
-              bserve as informações necessárias para preencher durante o
+              Observe as informações necessárias para preencher durante o
               processo
             </li>
           </ul>
 
-          <div className="flex flex-row items-center">
-            <h2 className={textStyle.h2Style}>
+          <div className="flex flex-col md:flex-row md:items-center">
+            <h2 className={`${textStyle.h2Style}`}>
               2. Acesse o site oficial do FATECLOG:
             </h2>
             <a 
             href="https://www.fateclog.com.br/congresso/login/"
-            target="_blanck"
-            className={textStyle.pStyle}
+            target="_blank"
+            
             >
               www.fateclog.com.br/congresso
             </a>
           </div>
 
-          <h2 className={textStyle.h2Style}>
+          <h2 className={`${textStyle.h2Style}`}>
             3. Siga as instruções do vídeo para criar seu usuário:
           </h2>
           <ul className={textStyle.ulStyle}>
-            <li className={textStyle.pStyle}>
-              Preencha os campos obrigatórios com precisão
-            </li>
+            
+              <li className={textStyle.pStyle}>
+                Preencha os campos obrigatórios com precisão
+              </li>
             <li className={textStyle.pStyle}>
               Certifique-se de utilizar um e-mail válido para receber
               notificações e atualizações
             </li>
           </ul>
-          <h2 className={textStyle.h2Style}>
+          <h2 className={`${textStyle.h2Style}`}>
             4. Conclua o processo de criação do usuário:
           </h2>
           <ul className={textStyle.ulStyle}>
