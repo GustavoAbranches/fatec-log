@@ -48,14 +48,14 @@ function OrientacaoEscricao() {
             </li>
           </ul>
 
-          <div className="flex flex-col md:flex-row md:items-center">
+          <div className="flex flex-col">
             <h2 className={`${textStyle.h2Style}`}>
               2. Acesse o site oficial do FATECLOG:
             </h2>
             <a 
             href="https://www.fateclog.com.br/congresso/login/"
             target="_blank"
-            
+            className="pl-8 md:pl-16"
             >
               www.fateclog.com.br/congresso
             </a>

@@ -1,18 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { textData } from "../../util/programacaoText";
+import BarraPesquisa from "./BarraPesquisa";
 
 export default function GradeProgramacao() {
+  const [searchTerm, setSearchTerm] = useState("");
   const [content, setContent] = useState(textData[0]?.content || []);
   const [activeTab, setActiveTab] = useState("25 DE JUNHO");
-  const [searchTerm, setSearchTerm] = useState("");
+
   const text = "Clique em um botão para ver os eventos de cada dia.";
+
+  useEffect(() => {
+    const allContent = textData.flatMap((day) => day.content);
+    setContent(allContent);
+  }, []);
 
   const filteredContent = content.filter((item) => {
     const searchLower = searchTerm.toLowerCase();
     return (
       item.title.toLowerCase().includes(searchLower) ||
       item.time.toLowerCase().includes(searchLower) ||
-      item.type.toLowerCase().includes(searchLower)
+      item.type.toLowerCase().includes(searchLower) ||
+      item.block.toLowerCase().includes(searchLower) ||
+      item.room.toLowerCase().includes(searchLower) ||
+      item.text.toLowerCase().includes(searchLower)
     );
   });
 
@@ -39,15 +49,7 @@ export default function GradeProgramacao() {
         </div>
       </div>
 
-      <div className="flex justify-center md:justify-start w-full  px-4 md:px-16 mt-4">
-        <input
-          type="text"
-          placeholder="Pesquisar..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-3/4 md:w-1/3 p-2 border border-gray-300 rounded-md"
-        />
-      </div>
+      <BarraPesquisa searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       <div className="flex flex-col justify-start items-start w-full px-4 md:px-16">
         {filteredContent.length === 0 ? (
@@ -63,9 +65,9 @@ export default function GradeProgramacao() {
                   {item.time}
                 </p>
                 <p className="text-lg md:text-2xl font-semibold text-slate-500 mb-2">
-                  {item.room !== false
+                  {item.room !== ""
                     ? `${item.block} - ${item.room}`
-                    : item.block}
+                    : `${item.block}`}
                 </p>
                 <p
                   className={`text-base md:text-xl ${

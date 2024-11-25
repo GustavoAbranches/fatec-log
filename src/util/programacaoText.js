@@ -10,7 +10,7 @@ export const textData = [
                 room: "Sala 108",
                 title: "Palestra Logísca Reversa",
                 speaker: "Nome do palestrante",
-                text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
+                text: "Lorem ipsum dolor sit gustavo amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
                     "veltenetur eius sed Quis dolore aut distinctio quam.In doloribus itaque et tempore" +
                     "iure et nihil ratione id cumque aperiam! Qui quidem libero ut sint sapiente non fuga excepturi.",
             },
@@ -19,7 +19,7 @@ export const textData = [
                 time: "10h30",
                 type: "Workshop",
                 block: "Auditório",
-                room: false,
+                room: '',
                 title: "Workshop",
                 speaker: "Nome do palestrante",
                 text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
@@ -31,7 +31,7 @@ export const textData = [
                 time: "11h",
                 type: "Premiação",
                 block: "SalaMaker",
-                room: false,
+                room: '',
                 title: "Premiação",
                 speaker: "Nome do palestrante",
                 text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
@@ -85,7 +85,7 @@ export const textData = [
                 time: "00h00",
                 type: "test",
                 block: "Refeitório",
-                room: false,
+                room: '',
                 title: "Premiação",
                 speaker: "Nome do palestrante",
                 text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
@@ -138,7 +138,7 @@ export const textData = [
                 time: "00h00",
                 type: "test",
                 block: "Refeitório",
-                room: false,
+                room: '',
                 title: "Premiação 2",
                 speaker: "Nome do palestrante",
                 text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +
@@ -150,7 +150,7 @@ export const textData = [
                 time: "00h00",
                 type: "test",
                 block: "Parque Gabriel Chucre",
-                room: false,
+                room: '',
                 title: "Palestra 8",
                 speaker: "Nome do palestrante",
                 text: "Lorem ipsum dolor sit amet. Sed pariatur earum 33 omnis temporibus non odit placeat" +

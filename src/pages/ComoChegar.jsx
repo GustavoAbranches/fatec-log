@@ -14,7 +14,7 @@ function ComoChegar() {
       <Navbar />
       <Breadcrumb />
 
-      <div className="flex flex-col w-full gap-2 p-20">
+      <div className="flex flex-col w-full gap-2 p-8 md:p-20">
         <h1 className="font-bold text-3xl pb-8">Quais as principais rotas?</h1>
 
         <h2 className={textStyle.h2Style}>1.De carro (via rodovias)</h2>
@@ -68,7 +68,7 @@ function ComoChegar() {
           </li>
         </ul>
 
-        <p className={textStyle.pStyle}>2. Ônibu</p>
+        <p className={textStyle.pStyle}>2. Ônibus</p>
         <ul className={textStyle.ulStyle}>
           <li>
             A cidade de Carapicuíba tem várias linhas de ônibus que conectam
