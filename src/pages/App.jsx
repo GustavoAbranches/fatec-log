@@ -25,6 +25,7 @@ function App() {
         path="/programacao"
         color="blue"
         img={img}
+        icon=""
       />
       <Localizacao
         btnLoc= "ativo"

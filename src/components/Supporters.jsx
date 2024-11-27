@@ -14,44 +14,36 @@ const patrocinadores = [
 
 const Supporters = () => {
   const styleDiv =
-    "flex flex-row w-full h-44 justify-center items-center md:px-14 md:my-10";
+    "w-full h-auto flex justify-center my-5";
   return (
     <>
-      <h1>Apoidares</h1>
+      <h1 className="m-4 font-bold text-2xl">Apoidares</h1>
       <div className={styleDiv}>
-        {apoidores.map((apoiador) => {
-          return (
-            <>
-              <div className="flex flex-col w-full items-center">
-                <div
-                  className="w-16 h-16 md:w-36 md:h-36 bg-orange-500"
-                  key={apoiador.nome}
-                >
-                  {apoiador.img}
-                </div>
-                {apoiador.nome}
-              </div>
-            </>
-          );
-        })}
+        <div className="grid grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-14 md:gap-40">
+          {apoidores.map((apoiador) => (
+            <div
+              key={apoiador.nome}
+              className="w-20 h-20 md:w-36 md:h-36 bg-orange-500"
+            >
+              {apoiador.img}
+            </div>
+          ))}
+        </div>
       </div>
-      <h1>Patrocinadores</h1>
+
+              
+      <h1 className="m-4 font-bold text-2xl">Patrocinadores</h1>
       <div className={styleDiv}>
-        {patrocinadores.map((patrocinador) => {
-          return (
-            <>
-              <div className="flex flex-col w-full items-center">
-                <div
-                  className="w-16 h-16 md:w-36 md:h-36 bg-orange-500"
-                  key={patrocinador.nome}
-                >
-                  {patrocinador.img}
-                </div>
-                {patrocinador.nome}
-              </div>
-            </>
-          );
-        })}
+        <div className="grid grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-14 md:gap-40">
+          {patrocinadores.map((patrocinador) => (
+            <div
+              key={patrocinador.nome}
+              className="w-20 h-20 md:w-36 md:h-36 bg-orange-500"
+            >
+              {patrocinador.img}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
