@@ -5,6 +5,8 @@ import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import isncImg from "../assets/inscricao_op1.png";
 import textStyle from "../util/textStyle.js";
+import Grafismo from "../components/Grafismo";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 function OrientacaoEscricao() {
   return (
@@ -88,6 +90,10 @@ function OrientacaoEscricao() {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div>
+        <Grafismo grafismo={arcoInferior} />
       </div>
 
       <WorkshopDiv

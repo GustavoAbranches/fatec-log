@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import Localizacao from "../components/Localizacao.jsx";
+import Grafismo from "../components/Grafismo.jsx";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 import textStyle from "../util/textStyle.js";
 
@@ -100,6 +102,9 @@ function ComoChegar() {
           Se você precisar de uma rota mais detalhada ou ajuda com outro tipo de
           transporte, posso fornecer mais informações
         </p>
+      </div>
+      <div>
+        <Grafismo grafismo={arcoInferior} />
       </div>
       <Localizacao 
         btn= ""

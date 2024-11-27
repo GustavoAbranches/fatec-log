@@ -2,7 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
-function SobreFatecLog() {
+import Grafismo from "../components/Grafismo";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+const SobreFatecLog = () => {
   return (
     <>
       <Header />
@@ -44,7 +46,9 @@ function SobreFatecLog() {
         </p>
       </div>
 
-      
+      <div>
+        <Grafismo grafismo={arcoInferior} />
+      </div>
 
       <div className="flex flex-col gap-5 p-10">
         <h1 className="font-bold text-3xl pb-5">FatecLog XVI</h1>

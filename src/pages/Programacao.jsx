@@ -5,6 +5,8 @@ import GradeProgramacao from "../components/Progamacao/GradeProgramacao";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import Breadcrumb from "../components/Breadcrumb.jsx"
 import proImg from "../assets/programacao_op1.png"
+import Grafismo from "../components/Grafismo";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 function Programacao() {
   return (
@@ -13,6 +15,10 @@ function Programacao() {
       <Navbar />
       <Breadcrumb/>
       <GradeProgramacao />
+
+      <div>
+        <Grafismo grafismo={arcoInferior} />
+      </div>
       <WorkshopDiv
         title = "Precisa da Programação em PDF?"
         text = "Clique e faça o download"

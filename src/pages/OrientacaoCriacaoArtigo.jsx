@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import img from "../assets/orientaA_op1.png"
+import Grafismo from "../components/Grafismo";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 import textStyle from "../util/textStyle.js";
 
@@ -53,6 +55,10 @@ function OrientacaoCriacaoArtigo() {
           endereço institucional (curso, unidade e núcleo a que pertence) e o
           endereço eletrônico (e-mail)
         </p>
+      </div>
+
+      <div>
+        <Grafismo grafismo={arcoInferior} />
       </div>
 
       <WorkshopDiv

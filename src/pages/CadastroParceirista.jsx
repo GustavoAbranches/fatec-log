@@ -2,12 +2,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx"
-function CadastroParceirista() {
+import Grafismo from "../components/Grafismo";
+import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+
+const CadastroParceirista = () => {
   return (
     <>
       <Header/>
       <Navbar />
       <Breadcrumb />
+      <div>
+        <Grafismo grafismo={arcoInferior} />
+      </div>
       <Footer />
     </>
   );

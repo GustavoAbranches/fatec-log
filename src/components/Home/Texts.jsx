@@ -3,7 +3,7 @@ import textStyle from "../../util/textStyle";
 export default function Texts() {
   return (
     <div className="flex flex-col justify-center items-center p-4">
-      <div className="flex flex-col md:flex-row items-center md:justify-evenly w-auto h-auto md:h-96 p-10 mt-32 max-w-[1250px]">
+      <div className="flex flex-col md:flex-row items-center md:justify-evenly w-auto h-auto md:h-96 p-10 m-10 max-w-[1250px]">
         
           <div className="pb-12 md:pb-52">
             <h1 className="font-medium text-blue-600">SOBRE O EVENTO</h1>

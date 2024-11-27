@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { textData } from "../../util/programacaoText";
 import BarraPesquisa from "./BarraPesquisa";
 
@@ -8,11 +8,6 @@ export default function GradeProgramacao() {
   const [activeTab, setActiveTab] = useState("25 DE JUNHO");
 
   const text = "Clique em um botão para ver os eventos de cada dia.";
-
-  useEffect(() => {
-    const allContent = textData.flatMap((day) => day.content);
-    setContent(allContent);
-  }, []);
 
   const filteredContent = content.filter((item) => {
     const searchLower = searchTerm.toLowerCase();
