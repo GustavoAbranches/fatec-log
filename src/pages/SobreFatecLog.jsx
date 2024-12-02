@@ -4,12 +4,15 @@ import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
-import EdicoesAnteriores from "../components/Footer/EdicoesAnteriores"
+import EdicoesAnteriores from "../components/EdicoesAnteriores"
+
+import header from "../assets/header_img/sobre_fatec_log.png"
 const SobreFatecLog = () => {
   return (
     <>
       <Header />
       <Navbar />
+        <img src={header} alt="" />
       <Breadcrumb />
 
       <div className="flex flex-col gap-5 p-10">

@@ -7,12 +7,14 @@ import Breadcrumb from "../components/Breadcrumb.jsx"
 import logImg from "../assets/log_op1.png"
 import brandImg from "../assets/brand_op1.png"
 
+import header from "../assets/header_img/img_fatec_carapicuiba.png"
 
 function Sobre() {
   return (
     <>
       <Header />
       <Navbar />
+      <img src={header} alt="" />
       <Breadcrumb />
       <div className="w-full max-w-6xl mx-auto p-8">
         <h1 className="text-3xl font-bold mb-8">Sobre a Fatec Carapicuíba</h1>

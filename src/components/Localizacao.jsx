@@ -3,7 +3,6 @@ import { CircleArrowRight } from "lucide-react";
 import PropTypes from "prop-types";
 
 import Map from "./Map";
-
 export default function Localizacao({ btnLoc }) {
   const styletext =
     "text-slate-500 text-sm md:text-lg font-normal leading-relaxed";

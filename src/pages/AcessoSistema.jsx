@@ -6,7 +6,7 @@ import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import isncImg from "../assets/inscricao_op1.png";
 import notebook from "../assets/notebook_inscricao.png"
 
-const OrientacaoEscricao = () => {
+const AcessoSistema = () => {
   return (
     <>
       <Header />
@@ -37,4 +37,4 @@ const OrientacaoEscricao = () => {
   );
 }
 
-export default OrientacaoEscricao;
+export default AcessoSistema;

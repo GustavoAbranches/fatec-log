@@ -8,11 +8,14 @@ import proImg from "../assets/programacao_op1.png"
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
+import header from "../assets/header_img/img_programacao.png"
+
 function Programacao() {
   return (
     <>
       <Header />
       <Navbar />
+      <img src={header} alt="" />
       <Breadcrumb/>
       <GradeProgramacao />
 

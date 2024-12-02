@@ -5,11 +5,16 @@ import Breadcrumb from "../components/Breadcrumb.jsx";
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
+import hotelData from "../util/hotelData.js";
+import header from "../assets/header_img/img_hospedagem.png"
+
+
 function Hospedagem() {
   return (
     <>
       <Header />
       <Navbar />
+      <img src={header} alt="" />
       <Breadcrumb />
 
       <div className="p-10">
@@ -31,6 +36,24 @@ function Hospedagem() {
       </div>
       <div>
         <Grafismo grafismo={arcoInferior} />
+      </div>
+      <div className="flex flex-col gap-6 w-full items-center">
+
+      {hotelData.map((hotel) => {
+        return(
+          <div key={hotel.nome} className="flex flex-row items-center w-2/3 h-52 shadow-lg">
+            <img src={hotel.img} alt={hotel.nome} className="h-48"/>
+            <div className="flex flex-col ml-14 w-1/2 gap-2">
+              <h1 className="text-black text-2xl font-bold">
+                {hotel.unidade === "" ? hotel.nome : `${hotel.nome} - ${hotel.unidade}`}
+              </h1>
+              <p className="text-slate-500 font-semibold text-md">Avaliação: {hotel.avaliacao}</p>
+              <p className="text-slate-500 font-semibold text-md">Endereço: {hotel.endereco}</p>
+              <p className="text-slate-500 font-semibold text-md">Conatato: {hotel.contato}</p>
+            </div>
+          </div>
+        )
+      })}
       </div>
 
       <Footer />

@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone } from "lucide-react";
-import Supporters from "./Supporters";
 import { linksData } from "../util/linksData";
 import logo from "../assets/icons/logo_horizontal.png";
+import Supporters from "./Supporters";
 import SocialButton from "./SocialButtons";
+import ButtonTop from "./Footer/ButtonTop";
 
 export default function Footer() {
   return (
     <>
       <Supporters />
 
-      <footer className=" bg-blue-800 text-white p-10">
+      <footer className=" bg-blue-800 text-white p-10 absolute">
+        <div className="flex w-full h-auto justify-center relative bottom-14">
+        <ButtonTop />
+        </div>
         <div className="container w-full h-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {linksData.map((section) => (

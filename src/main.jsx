@@ -12,8 +12,13 @@ import Hospedagem from "./pages/Hospedagem.jsx";
 import SobreFatecLog from "./pages/SobreFatecLog.jsx";
 import OrientacaoArtigo from "./pages/OrientacaoArtigo.jsx";
 import OrientacaoEscricao from "./pages/OrientacaoEscricao.jsx";
+import Manual from "./pages/Manual.jsx";
+import AcessoSistema from "./pages/AcessoSistema.jsx";
+import MapaEvento from "./pages/MapaEvento.jsx";
+import Fichatecnica from "./pages/FichaTecnica.jsx";
 
 import "./index.css";
+import ComiteFatecLog from "./pages/ComiteFatecLog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,7 +53,26 @@ const router = createBrowserRouter([
     path: "/orientacaoartigo",
     element: <OrientacaoArtigo />,
   },
-
+  {
+    path: "/manualdeidentidadevisual",
+    element: <Manual/>
+  },
+  {
+    path: "/acessosistema",
+    element: <AcessoSistema/>
+  },
+  {
+    path: "/mapaevento",
+    element: <MapaEvento/>
+  },
+  {
+    path: "/fichatecnica",
+    element: <Fichatecnica/>
+  },
+  {
+    path: "/comitefateclog",
+    element: <ComiteFatecLog/>
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

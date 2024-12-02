@@ -4,7 +4,7 @@ export const linksData = [
     title: "Institucional",
     links: [
       { text: "Sobre o Fatec Log", path: "/sobrefateclog" },
-      { text: "Comite Fatec Log", path: "/" },
+      { text: "Comite Fatec Log", path: "/comitefateclog" },
     ],
   },
   
@@ -13,12 +13,12 @@ export const linksData = [
     title: "Edição atual",
     links: [
       { text: "Programação", path: "/programacao" },
-      { text: "Mapa do evento", path: "" },
+      { text: "Mapa do evento", path: "/mapaevento" },
       { text: "Como chegar", path: "/comochegar" },
       { text: "Hospedagem", path: "/hospedagem" },
-      { text: "Manual de identidade individual", path: "" },
-      { text: "Grupos de pesquisa", path: "/sobrefateclog" },
-      { text: "Ficha técnica", path: "/sobrefateclog" },
+      { text: "Manual de identidade individual", path: "/manualdeidentidadevisual" },
+      { text: "Grupos de pesquisa", path: "" },
+      { text: "Ficha técnica", path: "/fichatecnica" },
       { text: "Fatec Carapicuiba", path: "/sobre" },
     ],
   },
@@ -27,7 +27,7 @@ export const linksData = [
     id: 3,
     title: "Área do participante",
     links: [
-      { text: "Acesso ao sistema", path: "" },
+      { text: "Acesso ao sistema", path: "/acessosistema" },
       { text: "Orientação para inscrição", path: "/orientacaoescricao" },
       { text: "Orientação para o artigo", path: "/orientacaoescricao" },
       { text: "Orientação para o prêmio", path: "/orientacaoescricao" },
