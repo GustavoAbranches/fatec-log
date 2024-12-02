@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+import EdicoesAnteriores from "../components/Footer/EdicoesAnteriores"
 const SobreFatecLog = () => {
   return (
     <>
@@ -60,6 +61,7 @@ const SobreFatecLog = () => {
         ensino nas Fatec
         </p>
       </div>
+      <EdicoesAnteriores />
       <Footer />
     </>
   );

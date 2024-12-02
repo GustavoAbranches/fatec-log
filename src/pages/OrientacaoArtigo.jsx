@@ -1,10 +1,10 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+import Header from "../components/Header.jsx";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import img from "../assets/orientaA_op1.png"
-import Grafismo from "../components/Grafismo";
+import Grafismo from "../components/Grafismo.jsx";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 import textStyle from "../util/textStyle.js";

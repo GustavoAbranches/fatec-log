@@ -3,60 +3,50 @@ export const linksData = [
     id: 1,
     title: "Institucional",
     links: [
-      { text: "Fatec Carapicuiba", path: "/sobre" },
-      { text: "Como chegar", path: "/comochegar" },
-      { text: "Hospedagem", path: "/hospedagem" },
-      { text: "Manual de identidade individual", path: "" },
+      { text: "Sobre o Fatec Log", path: "/sobrefateclog" },
+      { text: "Comite Fatec Log", path: "/" },
     ],
   },
   
   {
     id: 2,
-    title: "O evento",
+    title: "Edição atual",
     links: [
-      { text: "Sobre o Fatec Log", path: "/sobrefateclog" },
       { text: "Programação", path: "/programacao" },
-      { text: "Patrocinadores e apoiadores", path: "/patrocinadores" },
       { text: "Mapa do evento", path: "" },
-      { text: "Edições anteriores", path: "/edicoesanteriores" },
-      { text: "Cadastro de parcerista", path: "/cadastroparceirista" },
+      { text: "Como chegar", path: "/comochegar" },
+      { text: "Hospedagem", path: "/hospedagem" },
+      { text: "Manual de identidade individual", path: "" },
+      { text: "Grupos de pesquisa", path: "/sobrefateclog" },
+      { text: "Ficha técnica", path: "/sobrefateclog" },
+      { text: "Fatec Carapicuiba", path: "/sobre" },
     ],
   },
   
   {
     id: 3,
-    title: "Inscrição",
+    title: "Área do participante",
     links: [
       { text: "Acesso ao sistema", path: "" },
       { text: "Orientação para inscrição", path: "/orientacaoescricao" },
-      { text: "Inscrições de palestras/ mesas redondas", path: "/inscricaopalestra" },
-     
+      { text: "Orientação para o artigo", path: "/orientacaoescricao" },
+      { text: "Orientação para o prêmio", path: "/orientacaoescricao" },
+      { text: "Orientação para o boletim técnico", path: "/orientacaoescricao" },
+      { text: "Certificado", path: "/orientacaoescricao" },     
     ],
   },
 
   {
     id: 4,
-    title: "Artigos Científicos",
+    title: "Publicações",
     links: [
-      { text: "Orientações para criação de artigo", path: "/orientacaocriacaoartigo" },
-      { text: "Orientações para submissão de artigo", path: "/orientacaosubmissao" },
-      { text: "Template de artigo", path: "" },
-      { text: "Template de apresentação", path: "" },
-      { text: "Boletim técnico", path: "" },
-      { text: "Área de trabalhos aprovados", path: "" },
-      { text: "Área de Grupos de Pesquisa aprovados", path: "" },
+      { text: "Artigos", path: "" },
+      { text: "Prêmio Prof. Osvaldo Contador Jr.", path: "/orientacaosubmissao" },
+      { text: "Podcast", path: "" },
+      { text: "Notícias", path: "" },
     ],
   },
 
-  {
-    id: 5,
-    title: "Mídias",
-    links: [
-      { text: "Podcast", path: "" },
-      { text: "Notícias", path: "" },
-      { text: "Vídeos tutoriais", path: "" },
-    ],
-  },
 ]
 
 // { text: "Template de artigo", path: "" },

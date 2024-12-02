@@ -10,13 +10,8 @@ import Programacao from "./pages/Programacao.jsx";
 import ComoChegar from "./pages/ComoChegar.jsx";
 import Hospedagem from "./pages/Hospedagem.jsx";
 import SobreFatecLog from "./pages/SobreFatecLog.jsx";
-import EdicoesAnteriores from "./pages/EdicoesAnteriores.jsx";
-import CadastroParceirista from "./pages/CadastroParceirista.jsx";
-import Patrocinadores from "./pages/Patrocinadores.jsx";
-import InscricaoPalestra from "./pages/InscricaoPalestra.jsx";
-import OrientacaoCriacaoArtigo from "./pages/OrientacaoCriacaoArtigo.jsx";
+import OrientacaoArtigo from "./pages/OrientacaoArtigo.jsx";
 import OrientacaoEscricao from "./pages/OrientacaoEscricao.jsx";
-import OrientacaoSubmissao from "./pages/OrientacaoSubmissao.jsx";
 
 import "./index.css";
 
@@ -46,33 +41,14 @@ const router = createBrowserRouter([
     element: <SobreFatecLog />,
   },
   {
-    path: "/edicoesanteriores",
-    element: <EdicoesAnteriores />,
-  },
-  {
-    path: "/cadastroparceirista",
-    element: <CadastroParceirista />,
-  },
-  {
-    path: "/patrocinadores",
-    element: <Patrocinadores />,
-  },
-  {
     path: "/orientacaoescricao",
     element: <OrientacaoEscricao />,
   },
   {
-    path: "/inscricaopalestra",
-    element: <InscricaoPalestra />,
+    path: "/orientacaoartigo",
+    element: <OrientacaoArtigo />,
   },
-  {
-    path: "/orientacaocriacaoartigo",
-    element: <OrientacaoCriacaoArtigo />,
-  },
-  {
-    path: "/orientacaosubmissao",
-    element: <OrientacaoSubmissao />,
-  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

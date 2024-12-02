@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo_horizontal.png";
+import logo from "../assets/icons/logo_horizontal.png";
 import { linksData } from "../util/linksData";
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative justify-center bg-white shadow-md md:px-10">
+    <nav className="relative justify-center bg-blue-800 shadow-md md:px-10">
       <div className="w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-28">
           <div className="flex items-center w-24 md:w-36">
@@ -47,7 +47,7 @@ export default function Navbar() {
               <div key={btn.id} className="relative">
                 <button
                   onClick={() => toggleDropdown(btn.id)}
-                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-black"
+                  className="flex items-center space-x-1 px-3 py-2 rounded-md text-white"
                 >
                   <span>{btn.title}</span>
                   <ChevronDown
