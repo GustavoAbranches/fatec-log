@@ -184,18 +184,18 @@ const TabelaComite = () => {
         <input
           type="text"
           placeholder="Pesquisar..."
-          className="w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border  text-left text-sm">
-          <thead>
+          <thead className="p-2 border border-gray-700">
             <tr>
-              <th className="p-2 border ">Responsável</th>
-              <th className="p-2 border ">Fatec</th>
-              <th className="p-2 border ">Município</th>
-              <th className="p-2 border ">Curso</th>
-              <th className="p-2 border ">E-mail Institucional</th>
+              <th className="p-2 border border-gray-700">Responsável</th>
+              <th className="p-2 border border-gray-700">Fatec</th>
+              <th className="p-2 border border-gray-700">Município</th>
+              <th className="p-2 border border-gray-700">Curso</th>
+              <th className="p-2 border border-gray-700">E-mail Institucional</th>
             </tr>
           </thead>
           <tbody>
