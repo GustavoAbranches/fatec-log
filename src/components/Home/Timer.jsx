@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import Carrosel from "./Carrosel";
 // 
 
 export default function Timer() {
@@ -47,37 +47,36 @@ export default function Timer() {
   const styleDiv = "flex flex-col justify-center items-center text-sm md:text-md font-semibold text-slate-500"
 
   const styleTimer = "text-2xl md:text-4xl font-bold text-black"
-  return (
-    <div className="flex flex-col justify-center items-center w-full h-96 bg-red-500 relative ">
-      <span className="text-black text-xl font-bold">Imagem</span>
-      <div className="flex justify-evenly items-center shadow-xl w-11/12 h-28 bg-white mt-64 absolute -botton-8rem translate-y-2/4 md:px-60">
-
-      {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
-        <span className="text-4xl font-semibold">O Evento começou</span>
-      ) : (
-        <>
-          <div className={styleDiv}>
-            <p>Dias:</p>
-            <span className={styleTimer}>{timeLeft.days}</span>
+ // Timer.jsx
+return (
+  <div className="flex flex-col justify-center items-center w-full h-[400px] mt-14"> {/* Container principal */}
+      <Carrosel />
+      <div className=" w-11/12 max-w-4xl">
+          <div className="flex justify-evenly items-center shadow-xl w-full h-28 bg-white rounded-lg">
+              {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
+                  <span className="text-4xl font-semibold">O Evento começou</span>
+              ) : (
+                  <>
+                      <div className={styleDiv}>
+                          <p>Dias:</p>
+                          <span className={styleTimer}>{timeLeft.days}</span>
+                      </div>
+                      <div className={styleDiv}>
+                          <p>Horas:</p>
+                          <span className={styleTimer}>{timeLeft.hours}</span>
+                      </div>
+                      <div className={styleDiv}>
+                          <p>Minutos:</p>
+                          <span className={styleTimer}>{timeLeft.minutes}</span>
+                      </div>
+                      <div className={styleDiv}>
+                          <p>Segundos:</p>
+                          <span className={styleTimer}>{timeLeft.seconds}</span>
+                      </div>
+                  </>
+              )}
           </div>
-
-          <div className={styleDiv}>
-            <p>Horas:</p>
-            <span className={styleTimer}>{timeLeft.hours}</span>
-          </div>
-
-          <div className={styleDiv}>
-            <p>Minutos:</p>
-            <span className={styleTimer}>{timeLeft.minutes}</span>
-          </div>
-
-          <div className={styleDiv}>
-            <p>Segundos:</p>
-            <span className={styleTimer}>{timeLeft.seconds}</span>
-          </div>
-        </>
-      )}
       </div>
-    </div>
-  );
+  </div>
+);
 }

@@ -10,6 +10,13 @@ import img from "../assets/reuniao_op1.png";
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
+import {register} from "swiper/element/bundle";
+register();
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 function App() {
   return (
     <>

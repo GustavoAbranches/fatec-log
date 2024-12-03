@@ -11,14 +11,22 @@ import ComoChegar from "./pages/ComoChegar.jsx";
 import Hospedagem from "./pages/Hospedagem.jsx";
 import SobreFatecLog from "./pages/SobreFatecLog.jsx";
 import OrientacaoArtigo from "./pages/OrientacaoArtigo.jsx";
-import OrientacaoEscricao from "./pages/OrientacaoEscricao.jsx";
+import OrientacaoInscricao from "./pages/OrientacaoInscricao.jsx";
 import Manual from "./pages/Manual.jsx";
 import AcessoSistema from "./pages/AcessoSistema.jsx";
 import MapaEvento from "./pages/MapaEvento.jsx";
 import Fichatecnica from "./pages/FichaTecnica.jsx";
+import Certificado from "./pages/Certificado.jsx";
+import Premio from "./pages/Premio.jsx";
 
 import "./index.css";
 import ComiteFatecLog from "./pages/ComiteFatecLog.jsx";
+import OrientacaoBoletim from "./pages/OrientacaoBoletim.jsx";
+import GrupoPesquisa from "./pages/GruposPesquisa.jsx";
+import Artigos from "./pages/Artigos.jsx";
+import Noticias from "./pages/Noticias.jsx";
+import Podcast from "./pages/Podcast.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -46,8 +54,8 @@ const router = createBrowserRouter([
     element: <SobreFatecLog />,
   },
   {
-    path: "/orientacaoescricao",
-    element: <OrientacaoEscricao />,
+    path: "/orientacaoinscricao",
+    element: <OrientacaoInscricao />,
   },
   {
     path: "/orientacaoartigo",
@@ -72,6 +80,34 @@ const router = createBrowserRouter([
   {
     path: "/comitefateclog",
     element: <ComiteFatecLog/>
+  },
+  {
+    path: "/certificados",
+    element: <Certificado/>
+  },
+  {
+    path: "/premio",
+    element: <Premio/>
+  },
+  {
+    path: "/orientacaoboletim",
+    element: <OrientacaoBoletim/>
+  },
+  {
+    path: "/artigos",
+    element: <Artigos/>
+  },
+  {
+    path: "/noticias",
+    element: <Noticias/>
+  },
+  {
+    path: "/podcast",
+    element: <Podcast/>
+  },
+  {
+    path: "/grupopesquisa",
+    element: <GrupoPesquisa/>
   },
 ]);
 
