@@ -2,12 +2,13 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WorkshopDiv from "../components/WorkshopDiv";
-import ReturnButton from "../components/ReturnButton";
-import Breadcrumb from "../components/Breadcrumb.jsx"
-import logImg from "../assets/log_op1.png"
-import brandImg from "../assets/brand_op1.png"
+import Breadcrumb from "../components/Breadcrumb.jsx";
+import brandImg from "../assets/brand_op1.png";
+import Grafismo from "../components/Grafismo.jsx";
+import arcos from "../assets/grafismo/arcos_inferior_linha.png";
 
-import header from "../assets/header_img/img_fatec_carapicuiba.png"
+import header from "../assets/header_img/img_fatec_carapicuiba.png";
+import sobre from "../assets/sobre.png"
 
 function Sobre() {
   return (
@@ -64,36 +65,54 @@ function Sobre() {
         </div>
       </div>
 
+      <Grafismo grafismo={arcos} />
+
+      <div className="w-full text-slate-500 p-20">
+        <h1 className="text-black font-bold text-2xl mb-5">Região e Proximidades</h1>
+        <h2 className="text-black font-bold text-xl mb-5">Infraestrutura e Acessibilidade</h2>
+        <p>
+          A FATEC Carapicuíba está estrategicamente localizada na Grande São
+          Paulo, oferecendo fácil acesso por transporte público. A estação
+          Carapicuíba da CPTM (Linha 8 – Diamante) está a poucos minutos do
+          campus, além de contar com diversas linhas de ônibus que conectam a
+          região a outros bairros e cidades próximas. Nas imediações, há uma
+          variedade de centros comerciais, restaurantes e serviços essenciais,
+          atendendo às necessidades dos estudantes com praticidade.
+        </p>
+        <h2 className="text-black font-bold text-xl my-5">Hospedagem</h2>
+        <p>
+          A região de Carapicuíba e suas cidades vizinhas oferecem diversas opções
+          de hospedagem para quem precisa se acomodar durante eventos ou visitas à
+          FATEC. Desde hotéis econômicos a estabelecimentos mais sofisticados, as
+          alternativas são abundantes e atendem a diferentes perfis e orçamentos.
+          Com fácil acesso às principais rodovias e à estação de trem, os hotéis
+          próximos garantem comodidade e praticidade, estando localizados em
+          pontos estratégicos para facilitar o deslocamento.
+        </p>
+        <h2 className="text-black font-bold text-xl my-5">Patrimônio Histórico e Cultural</h2>
+        <p>
+          Carapicuíba se destaca também por sua rica herança cultural. Um dos
+          principais marcos da cidade é a Aldeia de Carapicuíba, remanescente das
+          aldeias jesuíticas do período colonial, sendo um dos poucos exemplos
+          preservados no Brasil. Além disso, a região conta com parques e espaços
+          de lazer, ideais para quem busca momentos de descontração ou estudo em
+          ambientes tranquilos. A localização central e o ambiente ao redor tornam
+          a FATEC Carapicuíba um espaço que combina acessibilidade, história e
+          modernidade.
+        </p>
+      </div>
+      <div className="flex w-full justify-center items-center">
+
+        <img src={sobre} alt=""/>
+      </div>
       <WorkshopDiv
         title="Identidade visual da Fatec e do Evento "
         text="Descubra as diferentes aplicações da identidade visual do evento e como ela combina com a Fatec Carapicuíba"
         btn="Confira nossa Identidade Visual"
         path="/"
         color="amber"
-        img={brandImg
-          
-        }
+        img={brandImg}
       />
-
-      <div className="w-full h-[800px] p-24">
-        <h1 className="text-3xl font-bold">Mapa do evento</h1>
-
-        <div>
-          <p className="flex justify-center items-center bg-lime-700 h-[600px] w-[1150px]">
-            Image
-          </p>
-        </div>
-      </div>
-
-      <WorkshopDiv
-        title="Conheça como Organizamos o evento!"
-        text="Entenda como utilizamos o espaço da Fatec Carapicuíba, a formação da nossa equipe, e como organizamos o evento"
-        btn="Estrutura Organizacional"
-        path="/"
-        color="blue"
-        img={logImg}
-      />
-      <ReturnButton />
 
       <Footer />
     </>

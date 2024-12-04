@@ -9,13 +9,7 @@ import Footer from "../components/Footer";
 import img from "../assets/reuniao_op1.png";
 import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
-
-import {register} from "swiper/element/bundle";
-register();
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import Palestrantes from "../components/Home/Palestrantes";
 
 function App() {
   return (
@@ -29,7 +23,7 @@ function App() {
       </div>
 
       <Texts />
-
+      <Palestrantes />
       <WorkshopDiv
         title="Palestras, Workshops, Inovações e Muito Mais!"
         text=" Uma oportunidade de aprender, trocar experiências e conhecer as

@@ -180,13 +180,6 @@ const TabelaComite = () => {
   return (
     <div className="min-h-screen p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">Comitê FatecLog</h2>
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Pesquisar..."
-          className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse border  text-left text-sm">
           <thead className="p-2 border border-gray-700">

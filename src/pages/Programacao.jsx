@@ -9,6 +9,7 @@ import Grafismo from "../components/Grafismo";
 import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
 
 import header from "../assets/header_img/img_programacao.png"
+import Palestrantes from "../components/Home/Palestrantes.jsx";
 
 function Programacao() {
   return (
@@ -17,6 +18,7 @@ function Programacao() {
       <Navbar />
       <img src={header} alt="" />
       <Breadcrumb/>
+      <Palestrantes />
       <GradeProgramacao />
 
       <div>
