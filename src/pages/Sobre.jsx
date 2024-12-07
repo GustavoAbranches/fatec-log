@@ -4,19 +4,12 @@ import Footer from "../components/Footer";
 import WorkshopDiv from "../components/WorkshopDiv";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import brandImg from "../assets/brand_op1.png";
-import Grafismo from "../components/Grafismo.jsx";
-import arcos from "../assets/grafismo/arcos_inferior_linha.png";
-
-import header from "../assets/header_img/img_fatec_carapicuiba.png";
-import sobre from "../assets/sobre.png"
+import Divisor from "../components/Divisor.jsx";
+import sobre from "../assets/sobre.png";
 
 function Sobre() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb />
       <div className="w-full max-w-6xl mx-auto p-8">
         <h1 className="text-3xl font-bold mb-8">Sobre a Fatec Carapicuíba</h1>
 
@@ -65,11 +58,15 @@ function Sobre() {
         </div>
       </div>
 
-      <Grafismo grafismo={arcos} />
+      <Divisor />
 
       <div className="w-full text-slate-500 p-20">
-        <h1 className="text-black font-bold text-2xl mb-5">Região e Proximidades</h1>
-        <h2 className="text-black font-bold text-xl mb-5">Infraestrutura e Acessibilidade</h2>
+        <h1 className="text-black font-bold text-2xl mb-5">
+          Região e Proximidades
+        </h1>
+        <h2 className="text-black font-bold text-xl mb-5">
+          Infraestrutura e Acessibilidade
+        </h2>
         <p>
           A FATEC Carapicuíba está estrategicamente localizada na Grande São
           Paulo, oferecendo fácil acesso por transporte público. A estação
@@ -81,29 +78,31 @@ function Sobre() {
         </p>
         <h2 className="text-black font-bold text-xl my-5">Hospedagem</h2>
         <p>
-          A região de Carapicuíba e suas cidades vizinhas oferecem diversas opções
-          de hospedagem para quem precisa se acomodar durante eventos ou visitas à
-          FATEC. Desde hotéis econômicos a estabelecimentos mais sofisticados, as
-          alternativas são abundantes e atendem a diferentes perfis e orçamentos.
-          Com fácil acesso às principais rodovias e à estação de trem, os hotéis
-          próximos garantem comodidade e praticidade, estando localizados em
-          pontos estratégicos para facilitar o deslocamento.
+          A região de Carapicuíba e suas cidades vizinhas oferecem diversas
+          opções de hospedagem para quem precisa se acomodar durante eventos ou
+          visitas à FATEC. Desde hotéis econômicos a estabelecimentos mais
+          sofisticados, as alternativas são abundantes e atendem a diferentes
+          perfis e orçamentos. Com fácil acesso às principais rodovias e à
+          estação de trem, os hotéis próximos garantem comodidade e praticidade,
+          estando localizados em pontos estratégicos para facilitar o
+          deslocamento.
         </p>
-        <h2 className="text-black font-bold text-xl my-5">Patrimônio Histórico e Cultural</h2>
+        <h2 className="text-black font-bold text-xl my-5">
+          Patrimônio Histórico e Cultural
+        </h2>
         <p>
           Carapicuíba se destaca também por sua rica herança cultural. Um dos
-          principais marcos da cidade é a Aldeia de Carapicuíba, remanescente das
-          aldeias jesuíticas do período colonial, sendo um dos poucos exemplos
-          preservados no Brasil. Além disso, a região conta com parques e espaços
-          de lazer, ideais para quem busca momentos de descontração ou estudo em
-          ambientes tranquilos. A localização central e o ambiente ao redor tornam
-          a FATEC Carapicuíba um espaço que combina acessibilidade, história e
-          modernidade.
+          principais marcos da cidade é a Aldeia de Carapicuíba, remanescente
+          das aldeias jesuíticas do período colonial, sendo um dos poucos
+          exemplos preservados no Brasil. Além disso, a região conta com parques
+          e espaços de lazer, ideais para quem busca momentos de descontração ou
+          estudo em ambientes tranquilos. A localização central e o ambiente ao
+          redor tornam a FATEC Carapicuíba um espaço que combina acessibilidade,
+          história e modernidade.
         </p>
       </div>
       <div className="flex w-full justify-center items-center">
-
-        <img src={sobre} alt=""/>
+        <img src={sobre} alt="" />
       </div>
       <WorkshopDiv
         title="Identidade visual da Fatec e do Evento "
@@ -113,8 +112,6 @@ function Sobre() {
         color="amber"
         img={brandImg}
       />
-
-      <Footer />
     </>
   );
 }

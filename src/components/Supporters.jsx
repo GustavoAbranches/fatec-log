@@ -20,7 +20,7 @@ const organizacoes = [
 ];
 
 const Supporters = () => {
-  const styleDiv = "w-full h-auto flex justify-center my-5";
+  const styleDiv = "w-full h-auto flex justify-center my-5 overflow-auto";
   return (
     <div className="mb-16">
       <h1 className="m-12 font-bold text-xl">Organização</h1>
@@ -37,7 +37,7 @@ const Supporters = () => {
         </div>
       </div>
 
-      <h1 className="m-12 font-bold text-xl">Apoidares</h1>
+      <h1 className="m-12 font-bold text-xl">Apoiadores</h1>
       <div className={styleDiv}>
         <div className="grid grid-cols-2 grid-rows-2 md:grid-rows-1 md:grid-cols-4 gap-14 md:gap-40">
           {apoidores.map((apoiador) => (

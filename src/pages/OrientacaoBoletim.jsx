@@ -4,8 +4,7 @@ import Header from "../components/Header.jsx";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import img from "../assets/orientaA_op1.png";
-import Grafismo from "../components/Grafismo.jsx";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+import Divisor from "../components/Divisor.jsx";
 import header from "../assets/header_img/img_orientacao_artigo.png";
 
 import textStyle from "../util/textStyle.js";
@@ -13,17 +12,13 @@ import textStyle from "../util/textStyle.js";
 const OrientacaoBoletim = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb />
 
       <div className={textStyle.divStyle}>
-        <div className="flex flex-row w-full">
-          <h1 className="text-2xl text-black font-bold w-1/3 mr-10">
+        <div className="flex flex-col md:flex-row w-full">
+          <h1 className="text-2xl text-black font-bold md:w-1/3 mr-10 md:mb-0 mb-8">
             O que é um Boletim Técnico?
           </h1>
-          <p className="w-2/3 text-slate-500">
+          <p className="md:w-2/3 text-slate-500">
             O Boletim é uma publicação técnica que apresenta informações atuais
             e resultados experimentais ou observações de estudos e pesquisas em
             fase de evolução; trata-se, para tanto, de resultados parciais e
@@ -36,7 +31,7 @@ const OrientacaoBoletim = () => {
           </p>
         </div>
 
-        <Grafismo grafismo={arcoInferior} />
+        <Divisor />
 
         <div>
           <h1 className="text-2xl text-black font-bold my-10">
@@ -152,7 +147,6 @@ const OrientacaoBoletim = () => {
         img={img}
       />
 
-      <Footer />
     </>
   );
 };

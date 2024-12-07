@@ -7,21 +7,13 @@ import Localizacao from "../components/Localizacao";
 import ContactForm from "../components/Home/ContactForm";
 import Footer from "../components/Footer";
 import img from "../assets/reuniao_op1.png";
-import Grafismo from "../components/Grafismo";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+import Divisor from "../components/Divisor";
 import Palestrantes from "../components/Home/Palestrantes";
 
 function App() {
+  
   return (
     <>
-      <Header />
-      <Navbar />
-      <Timer />
-
-      <div className="rotate-180">
-        <Grafismo grafismo={arcoInferior} />
-      </div>
-
       <Texts />
       <Palestrantes />
       <WorkshopDiv
@@ -35,11 +27,10 @@ function App() {
         icon=""
       />
       <Localizacao btnLoc="ativo" />
-      <div>
-        <Grafismo grafismo={arcoInferior} />
-      </div>
+
+      <Divisor />
+      
       <ContactForm />
-      <Footer />
     </>
   );
 }

@@ -7,11 +7,7 @@ import TabelaComite from "../components/comite/TabelaComite.jsx";
 const ComiteFatecLog = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <Breadcrumb />
         <TabelaComite />
-      <Footer />
     </>
   );
 }

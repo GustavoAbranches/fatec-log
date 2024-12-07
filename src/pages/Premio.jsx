@@ -2,21 +2,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx";
-import header from "../assets/header_img/img_premio.png"
-import Grafismo from "../components/Grafismo.jsx";
-import arcos from "../assets/grafismo/arcos_inferior_linha.png"
+import Divisor from "../components/Divisor.jsx";
 
 const Premio = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb />
 
-      <div className="flex flex-row w-full items-center justify-evenly h-auto gap-10 my-20">
-        <div className="w-full px-32 text-slate-500">
-          <h1 className="text-black text-2xl font-bold py-20">
+      <div className="flex flex-row w-full items-center justify-evenly h-auto gap-10 my-4 md:my-20">
+        <div className="w-full px-4 md:px-32 text-slate-500">
+          <h1 className="text-black text-2xl font-bold py-4 md:py-20">
             Quem foi Osvaldo Contador Junior? 
           </h1>
           <p>
@@ -29,7 +23,7 @@ const Premio = () => {
           convidados e um tema foi decidido, marcando assim o inicio do que viria a 
           ser um grande evento realizados todos os anos e sediados em diversas Fatecs.
           </p>
-          <h1 className="text-black text-2xl font-bold py-20">
+          <h1 className="text-black text-2xl font-bold pb-4 pt-16 md:py-20">
             Prêmio Osvaldo Contador Junior
           </h1>
           <p className="pb-5">
@@ -46,13 +40,15 @@ const Premio = () => {
           <ul className="list-disc pl-8 md:pl-16 pb-2 md:pb-5 text-slate-500">
             <li>Ter se inscrito e apresentado seu artigo</li>
             <li>Seu artigo ter sido aprovado entre os X primeiros colocados</li>
+            {/* TODO: ????? */}
             <li>XXXX</li>
           </ul>
         </div>
       </div>
 
-      <Grafismo grafismo={arcos} />
-      <div className="w-full px-32 text-slate-500">
+      <Divisor />
+
+      <div className="w-full px-4 md:px-32 text-slate-500">
         <h1 className="text-black text-2xl font-bold py-10"> Lista de Prêmiados </h1>
         <ul className="list-disc pl-8 md:pl-16 pb-2 md:pb-5 text-slate-500">
             <li></li>
@@ -65,7 +61,6 @@ const Premio = () => {
             <li></li>
         </ul>
       </div>
-      <Footer />
     </>
   );
 }

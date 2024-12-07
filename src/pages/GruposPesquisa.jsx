@@ -2,21 +2,15 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
-import Grafismo from "../components/Grafismo";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+import Divisor from "../components/Divisor";
 
 import gruposData from "../util/gruposData.js"
 
-import grupo from "../assets/header_img/img_grupo_pesquisa.png";
 
 const GrupoPesquisa = () => {
 
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={grupo} alt="" />
-      <Breadcrumb />
 
       <div className="w-full h-auto p-20">
         <h1 className="text-black text-2xl font-bold">Grupos de Pesquisa</h1>
@@ -27,7 +21,7 @@ const GrupoPesquisa = () => {
           desenvolvidos e suas contribuições para o setor.
         </p>
       </div>
-
+{/* ARrumar mobile */}
         <div className="grid grid-rows-3 grid-cols-2 gap-20 ml-40">
             {gruposData.map((grupo) => {
                 return(
@@ -48,8 +42,7 @@ const GrupoPesquisa = () => {
                 )
             })}
         </div>
-      <Grafismo grafismo={arcoInferior} />
-      <Footer />
+      <Divisor />
     </>
   );
 };
