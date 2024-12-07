@@ -5,24 +5,19 @@ import GradeProgramacao from "../components/Progamacao/GradeProgramacao";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import Breadcrumb from "../components/Breadcrumb.jsx"
 import proImg from "../assets/programacao_op1.png"
-import Grafismo from "../components/Grafismo";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
+import Divisor from "../components/Divisor";
 
-import header from "../assets/header_img/img_programacao.png"
 import Palestrantes from "../components/Home/Palestrantes.jsx";
 
 function Programacao() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb/>
+    {/* TODO: arrumar mobile */}
       <Palestrantes />
       <GradeProgramacao />
 
       <div>
-        <Grafismo grafismo={arcoInferior} />
+        <Divisor />
       </div>
       <WorkshopDiv
         title = "Precisa da Programação em PDF?"
@@ -33,7 +28,6 @@ function Programacao() {
         img = {proImg}
         icon = "download"
       />
-      <Footer />
     </>
   );
 };

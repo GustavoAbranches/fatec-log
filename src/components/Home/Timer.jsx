@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import img from "../../assets/banners/5.png"
+import imgArcosFatec from "../../assets/grafismo/Arcos_Fatecdonalds.svg";
 
 export default function Timer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -46,9 +47,11 @@ export default function Timer() {
 
   const styleTimer = "text-2xl md:text-4xl font-bold text-black"
   return (
-    <div className="flex flex-col justify-center items-center w-full bg-red-500 relative">
-      <img src={img} alt="" />
-      <div className="flex justify-evenly items-center shadow-xl w-11/12 h-28 bg-white mt-[450px] absolute -botton-8rem translate-y-2/4 rounded-2xl md:px-60">
+    <div className="flex flex-col justify-center items-center w-full relative">
+      {/* bg-red-500  */}
+      <img src={img} alt="" className="w-full max-h-[480px] object-cover"/>
+      <div className="flex justify-evenly items-center shadow-xl w-11/12 h-28 bg-white -mt-14 md:px-60">
+      {/* absolute -bottom-8rem  */}
         <div className={styleDiv}>
           <p>Dias:</p>
           <span className={styleTimer}>{timeLeft.days}</span>
@@ -69,6 +72,10 @@ export default function Timer() {
           <span className={styleTimer}>{timeLeft.seconds}</span>
         </div>
       </div>
+
+      <figure className="px-8 w-full flex justify-center">
+        <img src={imgArcosFatec} alt="" className="rotate-180" />
+      </figure>
     </div>
   );
 }

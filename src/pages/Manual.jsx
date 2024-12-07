@@ -2,24 +2,19 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/Footer";
-import Grafismo from "../components/Grafismo";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
-import img from "../assets/grafismo/grafismo.png"
+// import Grafismo from "../components/Grafismo";
+// import img from "../assets/grafismo/grafismo.png"
 import logo from "../assets/icons/logo.png"
+import Divisor from "../components/Divisor";
 
-import miv from "../assets/header_img/img_miv.png"
 
 
 const Manual = () => {
     return(
         <>
-        <Header/>
-        <Navbar/>
-        <img src={miv} alt="" />
-        <Breadcrumb/>
 
-        <div className="flex flex-row justify-evenly items-center w-full h-auto my-20">
-            <div className="w-1/3 ">
+        <div className="flex flex-col md:flex-row px-4 md:px-0 justify-evenly items-center w-full h-auto my-20">
+            <div className="md:w-1/3 ">
                 <h1 className="text-black text-2xl font-bold">Manual de Identidade Visual</h1>
                 <p className="text-slate-500">
                     Nesta página, você encontra o Manual de Identidade 
@@ -29,15 +24,15 @@ const Manual = () => {
                     tipografias, logotipos e muito mais que tornam esta edição única!
                 </p>
             </div>
-            <img src={logo} alt="logo" className="w-60 "/>
+            <img src={logo} alt="logo" className="w-60 mt-16 md:mt-0"/>
 
-            <div className="pb-40">
-                <Grafismo grafismo={img}/>    
+            <div className="pb-4 md:pb-40">
+                {/* <Grafismo grafismo={img}/>
+                TODO: arrumar grafismo diagonal */}
             </div>        
         </div>
 
-        <Grafismo grafismo={arcoInferior}/>
-        <Footer/>
+        <Divisor />
         </>
     )
 }

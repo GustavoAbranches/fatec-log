@@ -11,11 +11,11 @@ export default function Footer() {
     <>
       <Supporters />
 
-      <footer className=" bg-blue-800 text-white p-10 absolute">
+      <footer className=" bg-blue-800 text-white p-10 ">
         <div className="flex w-full h-auto justify-center relative bottom-14">
         <ButtonTop />
         </div>
-        <div className="container w-full h-full">
+        <div className="container w-full h-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {linksData.map((section) => (
               <div key={section.title} className="flex flex-col w-48">

@@ -4,20 +4,13 @@ import Header from "../components/Header.jsx";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import img from "../assets/orientaA_op1.png"
-import Grafismo from "../components/Grafismo.jsx";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
-import header from "../assets/header_img/img_orientacao_artigo.png"
+import Divisor from "../components/Divisor.jsx";
 
 import textStyle from "../util/textStyle.js";
 
 function OrientacaoCriacaoArtigo() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb />
-
       <div className={textStyle.divStyle}>
         <h1 className={textStyle.h1Style}>Como organizar meu artigo?</h1>
         <p className={textStyle.pStyle}>
@@ -79,7 +72,7 @@ function OrientacaoCriacaoArtigo() {
       </div>
 
       <div>
-        <Grafismo grafismo={arcoInferior} />
+        <Divisor />
       </div>
 
       <WorkshopDiv
@@ -91,7 +84,6 @@ function OrientacaoCriacaoArtigo() {
         img={img}
       />
 
-      <Footer />
     </>
   );
 }

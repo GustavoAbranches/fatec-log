@@ -7,11 +7,7 @@ import Organizacao from "../components/ficha_tecnica/Organizacao.jsx";
 const Fichatecnica = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <Breadcrumb />
         <Organizacao />
-      <Footer />
     </>
   );
 }

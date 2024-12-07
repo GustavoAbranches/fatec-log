@@ -3,28 +3,19 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb.jsx";
 import Localizacao from "../components/Localizacao.jsx";
-import Grafismo from "../components/Grafismo.jsx";
-import arcoInferior from "../assets/grafismo/arcos_inferior_linha.png";
-
+import Divisor from "../components/Divisor.jsx";
 import textStyle from "../util/textStyle.js";
-
-import header from "../assets/header_img/img_como_chegar.png"
 
 function ComoChegar() {
 
   return (
     <>
-      <Header />
-      <Navbar />
-      <img src={header} alt="" />
-      <Breadcrumb />
 
       <Localizacao 
         btn= ""
       />
-      <div>
-        <Grafismo grafismo={arcoInferior} />
-      </div>
+      <Divisor />
+
       <div className="flex flex-col w-full gap-2 p-8 md:p-20">
         <h1 className="font-bold text-3xl pb-8">Quais as principais rotas?</h1>
 
@@ -67,6 +58,7 @@ function ComoChegar() {
           </div>
         </div>
 
+        {/* TODO: arrumar mobile */}
         <h2 className="font-bold text-2xl pb-4">De transporte público (ônibus e trem)</h2>
         <div className="flex flex-row gap-10">
           <div>
@@ -146,7 +138,6 @@ function ComoChegar() {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

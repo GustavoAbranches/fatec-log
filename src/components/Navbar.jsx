@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className=" flex flex-row justify-center p-2 rounded-md text-black hover:text-gray-900 focus:outline-none"
+              className=" flex flex-row justify-center p-2 rounded-md text-white hover:text-gray-500 focus:outline-none"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />

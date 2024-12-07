@@ -9,12 +9,9 @@ import notebook from "../assets/notebook_inscricao.png"
 const AcessoSistema = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <Breadcrumb />
 
-      <div className="flex flex-row w-full items-center justify-evenly h-auto gap-10 my-20">
-        <div className="w-1/2 px-20">
+      <div className="flex flex-col md:flex-row w-full items-center justify-evenly h-auto gap-10 my-20">
+        <div className="md:w-1/2 px-20">
           <h1 className="text-black text-2xl font-bold">Acesse o sistema externo de inscrição </h1>
           <p className="text-slate-500">
             Se você já possui um cadastro ou deseja fazer um, 
@@ -32,7 +29,6 @@ const AcessoSistema = () => {
         color="blue"
         img={isncImg}
       />
-      <Footer />
     </>
   );
 }
