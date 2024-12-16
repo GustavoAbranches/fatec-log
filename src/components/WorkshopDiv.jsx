@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import ScrollToTop from "./Main/ScrollToTop";
 
 const colorClasses = {
-  amber: "bg-yellow-500",
-  blue: "bg-blue-900",
+  amber: "bg-fatec-yellow",
+  blue: "bg-fatec-blue",
 };
 
 export default function WorkshopDiv({
@@ -20,7 +20,7 @@ export default function WorkshopDiv({
   const bgColorClass = colorClasses[color] || "";
   return (
     <div
-      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] px-12 md:px-24 items-center justify-around`}
+      className={`flex flex-col md:flex-row ${bgColorClass} min-h-[500px] py-12 md:py-0 px-12 md:px-24 items-center justify-around`}
     >
       <img
         src={img}
@@ -28,7 +28,7 @@ export default function WorkshopDiv({
       />
 
       <div className="flex flex-col md:pl-10 md:w-1/2">
-        <p className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+        <p className="text-white text-2xl md:text-3xl lg:text-4xl font-bold pt-4 md:pt-0 mb-4">
           {title}
         </p>
         <p className="text-white leading-relaxed text-base md:text-lg font-medium w-full md:w-4/5 mb-6">
@@ -37,7 +37,7 @@ export default function WorkshopDiv({
 
         <Link
           to={path}
-          className="bg-red-600 w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
+          className="bg-fatec-red w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
         >
           <ScrollToTop />
           {btn}

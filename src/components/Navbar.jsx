@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative justify-center bg-blue-800 shadow-md md:px-10">
+    <nav className="relative justify-center bg-fatec-blue shadow-md md:px-10">
       <div className="w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-28">
           <div className="flex items-center w-24 md:w-36">
@@ -59,7 +59,7 @@ export default function Navbar() {
 
                 {/* Desktop dropdown */}
                 {openDropdown === btn.id && (
-                  <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
                     <div className="py-1" role="menu">
                       {btn.links.map((subItem) => (
                         <Link

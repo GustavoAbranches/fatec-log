@@ -27,7 +27,7 @@ function OrientacaoCriacaoArtigo() {
         </p>
         
         <div className="flex flex-row w-full h-auto my-20">
-          <div className="w-10 mx-10 bg-orange-500"></div>
+          <div className="w-10 mx-10 bg-fatec-orange"></div>
           <div>
             <h2 className={textStyle.h2Style}>Tamanho do artigo:</h2>
             <p className={textStyle.pStyle}>

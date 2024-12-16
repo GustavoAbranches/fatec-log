@@ -48,16 +48,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full min-h-screen bg-gray-800 text-white">
+    <div className="flex flex-col md:flex-row w-full min-h-screen bg-fatec-gray text-white">
       {/* Left Column */}
       <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
         <h1 className="text-4xl font-bold mb-4">Contato</h1>
         <p className="text-xl mb-8">Envie-nos uma mensagem!</p>
         <p className="text-gray-300 mb-8">
-          Preencha o formulário ao lado e retornaremos o contato assim que possível
+          Preencha o formulário ao lado para falar com a organização do XVI FatecLog
         </p>
         
-        <div className="mb-8">
+        {/* Componente retirado do protótipo */}
+        {/* <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Fale com a gente</h2>
           <p className="text-gray-300 mb-4">
             Estamos disponíveis de segunda a sexta-feira, das 8h às 19h
@@ -70,13 +71,13 @@ const ContactForm = () => {
           
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5" />
-            <span>Fatec Deputado Ary Fossen – Av. União dos Ferroviários, 1760</span>
+            <span>Fatec Carapicuíba – Av. Francisco Pignatari, 650</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Column - Form */}
-      <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-8 pt-0 md:p-16 flex flex-col justify-center">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block mb-2">Nome</label>
@@ -135,7 +136,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="w-full bg-red-600 text-white py-3 px-6 rounded hover:bg-red-700 transition-colors"
+            className="w-full bg-fatec-orange text-white py-3 px-6 rounded hover:bg-amber-700 transition-colors"
           >
             Enviar
           </button>

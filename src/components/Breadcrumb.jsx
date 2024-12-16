@@ -29,7 +29,7 @@ export default function Breadcrumb() {
           <div key={to} className="flex items-center">
             <span className="text-gray-400 mx-1">›</span>
             {index === pathnames.length - 1 ? (
-              <span className="text-red-600 font-medium">{text}</span>
+              <span className="text-fatec-red font-medium">{text}</span>
             ) : (
               <Link to={to} className="hover:text-gray-900 transition-colors duration-200">
                 {text}

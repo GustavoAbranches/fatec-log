@@ -2,11 +2,11 @@ import textStyle from "../../util/textStyle";
 
 export default function Texts() {
   return (
-    <div className="flex flex-col justify-center items-center p-10">
+    <div className="flex flex-col justify-center items-center p-6 md:p-10">
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-evenly w-auto h-auto md:p-10 m-2 my-10 md:m-10 max-w-[1250px]">
         
           <div className="pb-12 md:pb-52 text-center md:text-left">
-            <h1 className="font-medium text-blue-600">SOBRE O EVENTO</h1>
+            <h1 className="font-medium text-fatec-blue">SOBRE O EVENTO</h1>
             <h2 className="font-bold text-2xl md:text-4xl text-gray-900">
               O que é o Fateclog?
             </h2>
