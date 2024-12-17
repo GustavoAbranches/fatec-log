@@ -8,7 +8,7 @@ export default function Localizacao({ btnLoc }) {
     "text-slate-500 text-sm md:text-lg font-normal leading-relaxed";
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-16 lg:py-20">
+    <div className="container mx-auto px-6 md:px-4 py-8 md:py-16 lg:py-20">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         <div className="flex flex-col space-y-6 lg:w-1/2">
           <div className="space-y-2">
@@ -45,9 +45,9 @@ export default function Localizacao({ btnLoc }) {
             {btnLoc === "ativo" ? (
               <Link
                 to="/comochegar"
-                className="bg-red-600 w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
+                className="bg-fatec-red w-full md:w-[300px] h-8 text-white font-semibold flex items-center justify-center"
               >
-                {"Confira mais Informaçoes "}
+                {"Confira mais Informações "}
                 <CircleArrowRight className="w-5 h-5 ml-1 mt-1" />
               </Link>
             ) : null}

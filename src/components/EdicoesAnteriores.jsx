@@ -21,7 +21,7 @@ const EdicoesAnteriores = () => {
               {cartao.divText === "" ? null : (
                 <>
                   <div
-                    className="absolute left-0 mx-6 bottom-6 bg-orange-500 px-3 py-1 text-white font-bold text-sm rounded-md"
+                    className="absolute left-0 mx-6 bottom-6 bg-fatec-orange px-3 py-1 text-white font-bold text-sm rounded-md"
                   >
                     {cartao.divText}
                   </div>

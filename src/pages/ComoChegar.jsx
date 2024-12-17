@@ -10,6 +10,15 @@ function ComoChegar() {
 
   return (
     <>
+      <div className="p-8 md:p-12">
+        <p className={textStyle.pStyle}>
+          Para facilitar sua chegada, disponibilizamos o endereço completo do evento, permitindo que você escolha a melhor forma de se deslocar até aqui.
+        </p>
+        <p className={textStyle.pStyle}>
+          Além disso, preparamos algumas sugestões de rotas e pontos de refência para tornar sua viagem mais prática e confortável. Seja de transporte público, carro ou aplicativos de mobilidade, estamos aqui para ajudar você a encontrar o melhor caminho.
+          Confira o endereço e as opções disponíveis, e venha viver essa experiência única conosco!
+        </p>
+      </div>
 
       <Localizacao 
         btn= ""
@@ -25,8 +34,8 @@ function ComoChegar() {
           Avenida 26 de Março, 2100. Os principais caminhos para chegar lá
           incluem
         </p>
-        <div className="flex flex-row gap-10">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-10">
+          <div className="w-full md:w-1/2">
             <p className={textStyle.pStyle}>A partir da Rodovia Castello Branco (SP-280)</p>
             <ul className={textStyle.ulStyle}>
               <li>Saída 23B para Carapicuíba.</li>
@@ -47,7 +56,7 @@ function ComoChegar() {
               </li>
             </ul>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <p className={textStyle.pStyle}>A partir do Centro de São Paulo</p>
             <ul className={textStyle.ulStyle}>
               <li>
@@ -58,9 +67,8 @@ function ComoChegar() {
           </div>
         </div>
 
-        {/* TODO: arrumar mobile */}
-        <h2 className="font-bold text-2xl pb-4">De transporte público (ônibus e trem)</h2>
-        <div className="flex flex-row gap-10">
+        <h2 className="font-bold text-2xl py-4">De transporte público (ônibus e trem)</h2>
+        <div className="flex flex-col md:flex-row gap-2 md:gap-10">
           <div>
             <p className={textStyle.pStyle}>Trem (via CPTM)</p>
             <ul className={textStyle.ulStyle}>
@@ -94,7 +102,7 @@ function ComoChegar() {
           </div>
         </div>
 
-        <h2 className="font-bold text-2xl pb-4">De bicicleta</h2>
+        <h2 className="font-bold text-2xl py-4">De bicicleta</h2>
         <p className={textStyle.pStyle}>
           Se você está em Carapicuíba ou nas proximidades, a Fatec também pode
           ser acessada de bicicleta. A cidade tem algumas ciclovias, mas é
@@ -108,34 +116,32 @@ function ComoChegar() {
           horários e opções atualizadas em aplicativos como o Google Maps,
           Moovit, ou o SPTrans, caso esteja em São Paulo
         </p>
-        <p className={textStyle.pStyle}>
-          Se você precisar de uma rota mais detalhada ou ajuda com outro tipo de
-          transporte, posso fornecer mais informações
-        </p>
       </div>
       
-      <div className="flex flex-row justify-center items-center w-full h-80 bg-orange-500 gap-10">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full h-fit md:h-80 bg-fatec-orange gap-2 md:gap-10">
         <div className="h-full p-10 text-white font-bold text-2xl">
           <h1>Pontos de referência</h1>
         </div>
-        <div>
-          <ul className="text-white list-disc">
-            <li>Terminal de Ônibus Carapicuíba</li>
-            <li>Rodoviária de Carapicuíba</li>
-            <li>Supermercado Carrefour Carapicuíba</li>
-            <li>Shopping Iguatemi Alphaville</li>
-            <li>Hospital de Carapicuíba</li>
-          </ul>
-        </div>
+        <div className="flex flex-col md:flex-row md:gap-40 px-10 pb-6 md:p-2">
+          <div>
+            <ul className="text-white list-disc">
+              <li>Terminal de Ônibus Carapicuíba</li>
+              <li>Rodoviária de Carapicuíba</li>
+              <li>Supermercado Carrefour Carapicuíba</li>
+              <li>Shopping Iguatemi Alphaville</li>
+              <li>Hospital de Carapicuíba</li>
+            </ul>
+          </div>
 
-        <div>
-          <ul className="text-white list-disc">
-            <li>Câmara Municipal de Carapicuíba</li>
-            <li>Posto de Gasolina Ipiranga</li>
-            <li>Escola Estadual Doutor José Vicente de Azevedo</li>
-            <li>Praça 14 de Novembro</li>
-            <li>Banco do Brasil Carapicuíba</li>
-          </ul>
+          <div>
+            <ul className="text-white list-disc">
+              <li>Câmara Municipal de Carapicuíba</li>
+              <li>Posto de Gasolina Ipiranga</li>
+              <li>Escola Estadual Doutor José Vicente de Azevedo</li>
+              <li>Praça 14 de Novembro</li>
+              <li>Banco do Brasil Carapicuíba</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

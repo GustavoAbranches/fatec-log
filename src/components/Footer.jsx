@@ -11,7 +11,7 @@ export default function Footer() {
     <>
       <Supporters />
 
-      <footer className=" bg-blue-800 text-white p-10 ">
+      <footer className=" bg-fatec-blue text-white p-10 ">
         <div className="flex w-full h-auto justify-center relative bottom-14">
         <ButtonTop />
         </div>

@@ -1,7 +1,3 @@
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
-import Header from "../components/Header.jsx";
-import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import isncImg from "../assets/inscricao_op1.png";
 import inscricao from "../assets/orientacao_inscricao.png";
@@ -12,7 +8,7 @@ import img_2 from "../assets/inscricao_img/2_inscricao_text.png";
 const OrientacaoInscricao = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row w-full items-center justify-evenly h-auto gap-10 my-4 md:my-20 px-4 md:px-32">
+      <div className="flex flex-col md:flex-row w-full items-center justify-evenly h-auto gap-10 my-4 md:my-20 px-6 md:px-32">
         <div className="md:w-1/2">
           <h2 className="text-black text-2xl font-bold mb-5">
             Quem pode participar do evento?
@@ -35,15 +31,15 @@ const OrientacaoInscricao = () => {
             Sistema
           </p>
         </div>
-        <img src={inscricao} alt="" className="md:w-1/2" />
+        <img src={inscricao} alt="" className="hidden md:block w-1/2" />
       </div>
 
-      <div className="flex flex-col px-4 md:px-32 w-full justify-between mb-10 md:mt-0 mt-20">
+      <div className="flex flex-col px-6 md:px-32 w-full justify-between mb-10 md:mt-0 mt-20">
         <h2 className="text-black text-2xl font-bold mb-5">
           Como entrar no sistema do FatecLog
         </h2>
         <div className="flex flex-wrap flex-col md:flex-row gap-6">
-          <div class="flex flex-1 flex-1">
+          <div class="flex flex-1">
             <figure className="flex flex-auto justify-center items-center w-full max-w-16 h-16 me-6">
               <img src={img_1} alt="" className="h-full object-cover" />
             </figure>
@@ -62,7 +58,7 @@ const OrientacaoInscricao = () => {
             </div>
           </div>
 
-          <div class="flex flex-row flex-1">
+          <div class="flex flex-row flex-1 px-6">
             <figure className="flex flex-auto justify-center items-center w-full max-w-16 h-16 me-6">
               <img src={img_2} alt="" className="h-full object-cover" />
             </figure>
@@ -90,7 +86,7 @@ const OrientacaoInscricao = () => {
                   cadastro.
                 </li>
                 <li>
-                  5. <span className="text-blue-600">Importante:</span>{" "}
+                  5. <span className="text-fatec-blue">Importante:</span>{" "}
                   Certifique-se de usar um e-mail válido, pois será através dele
                   que você receberá atualizações sobre o evento.
                 </li>
@@ -100,13 +96,13 @@ const OrientacaoInscricao = () => {
         </div>
       </div>
 
-      <div className="w-full md:px-32 px-4 mx-auto">
+      <div className="w-full md:px-32 px-6 mx-auto">
         <h2 className="text-black text-2xl font-bold mb-10">
           Tipos de Inscrições
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="">
-            <h3 className="bg-blue-900 leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
+            <h3 className="bg-fatec-blue leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
               Inscrição no Evento
             </h3>
             <p className="text-slate-500">
@@ -121,7 +117,7 @@ const OrientacaoInscricao = () => {
             </p>
           </div>
           <div className="">
-            <h3 className="bg-blue-900 leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
+            <h3 className="bg-fatec-blue leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
               Submissão de Artigo
             </h3>
             <p className="text-slate-500">
@@ -136,7 +132,7 @@ const OrientacaoInscricao = () => {
             </p>
           </div>
           <div className="">
-            <h3 className="bg-blue-900 leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
+            <h3 className="bg-fatec-blue leading-none p-2 rounded-md text-lg font-bold mb-4 text-white inline-block">
               Cadastro de Parecerista
             </h3>
             <p className="text-slate-500">
@@ -156,13 +152,13 @@ const OrientacaoInscricao = () => {
         <div className="max-w-[750px] mx-auto text-center px-4 text-black text-xl mb-10">
           Após seguir todos esses passos, você estará completamente cadastrado e
           poderá aproveitar todas as oportunidades oferecidas pelo{" "}
-          <span className="text-blue-700">XVI FATECLOG</span>.
+          <span className="text-fatec-blue">XVI FATECLOG</span>.
           <br />
           <br />
           <br />
           {/* TODO: ver se tem componente pra esse botão */}
           {/* TODO: link do sistema */}
-          <button className="py-4 px-10 bg-red-500 text-white">Acessar O Sistema</button>
+          <button className="py-4 px-10 bg-fatec-red text-white">Acessar O Sistema</button>
         </div>
       </div>
 

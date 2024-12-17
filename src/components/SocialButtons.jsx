@@ -31,7 +31,7 @@ const SocialButton = () => {
     },
   ];
 
-  const btnStyle = "w-8 h-8 flex justify-center items-center bg-orange-500 rounded-full m-1 text-white";
+  const btnStyle = "w-8 h-8 flex justify-center items-center bg-fatec-orange rounded-full m-1 text-white";
 
   return (
     <div className="flex flex-row items-center">

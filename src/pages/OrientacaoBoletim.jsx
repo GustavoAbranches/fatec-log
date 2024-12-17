@@ -1,11 +1,6 @@
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
-import Header from "../components/Header.jsx";
-import Breadcrumb from "../components/Breadcrumb.jsx";
 import WorkshopDiv from "../components/WorkshopDiv.jsx";
 import img from "../assets/orientaA_op1.png";
 import Divisor from "../components/Divisor.jsx";
-import header from "../assets/header_img/img_orientacao_artigo.png";
 
 import textStyle from "../util/textStyle.js";
 
@@ -56,7 +51,7 @@ const OrientacaoBoletim = () => {
         </div>
 
         <div className="flex flex-row w-full h-auto my-20">
-          <div className="w-5 mx-10 bg-orange-500"></div>
+          <div className="w-5 mx-10 bg-fatec-orange"></div>
           <div>
             <ul className="list-disc text-slate-500">
               <li>
@@ -84,7 +79,7 @@ const OrientacaoBoletim = () => {
         </div>
 
         <div className="flex flex-row w-full h-auto my-20">
-          <div className="w-10 mx-10 bg-orange-500"></div>
+          <div className="w-10 mx-10 bg-fatec-orange"></div>
           <div>
             <h2 className={textStyle.h2Style}>Apresentação:</h2>
             <p className={textStyle.pStyle}>

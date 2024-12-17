@@ -34,7 +34,7 @@ export default function GradeProgramacao() {
               }}
               className={`px-3 md:px-16 py-2 md:py-3 font-semibold text-xs md:text-2xl transition-colors cursor-pointer whitespace-nowrap ${
                 activeTab === btnDay.day
-                  ? "text-red-600 border-b-2 border-red-600"
+                  ? "text-fatec-red border-b-2 border-fatec-red"
                   : "text-gray-500 hover:text-gray-700"
               }`}
             >
@@ -67,11 +67,11 @@ export default function GradeProgramacao() {
                 <p
                   className={`text-base md:text-xl ${
                     item.type === "Palestra"
-                      ? "text-red-600"
+                      ? "text-fatec-red"
                       : item.type === "Workshop"
-                      ? "text-orange-600"
+                      ? "text-fatec-orange"
                       : item.type === "Premiação"
-                      ? "text-amber-500"
+                      ? "text-fatec-yellow"
                       : ""
                   }`}
                 >
